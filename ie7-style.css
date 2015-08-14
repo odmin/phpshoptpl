@@ -1,0 +1,22 @@
+.search-inp-l, .search-inp-c, .search-inp-r {
+    display: block;
+    float: left;
+}
+
+#searchv {
+    width: 282px;
+}
+
+.hcell {
+	display: block;
+	float: left;
+}
+
+.header > .hcell-4 {
+	width: 210px;
+}
+
+.header .htable .hcell {
+	width: 68px;
+	margin-top: 20px;
+}
