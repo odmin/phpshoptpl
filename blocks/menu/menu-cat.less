@@ -1,0 +1,35 @@
+@import '../_framework/var';
+.menu-link(){
+	text-decoration: none;
+	color: @color-black-lead;
+}
+.menu-cat{
+	.reset-list();
+
+	width: 100%;
+	display: table;
+	
+	&__parent{
+		.menu-link();
+		display: inline-block;
+		padding: 11px 8px;
+	}
+
+	&__item{
+		display: table-cell;
+		&:hover{
+			.box-shadow-top-inset(.5);
+			background: @color-yellow-bold;
+		}
+	}
+
+}
+.menu-cat-child{
+	.reset-list();
+	
+	display: none;
+	
+	&__link{
+		.menu-link()
+	}
+}

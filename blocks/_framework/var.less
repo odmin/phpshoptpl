@@ -13,7 +13,9 @@
 @color-text: rgb(85, 85, 85);
 @color-grey: #555;
 @color-green: #3DB656;
-
+@color-gold: #ffd203;
+@color-yellow-bold: #ffb503;
+@color-black-lead: #1C1C1C;
 
 @logo-height: 94px;
 
@@ -30,4 +32,16 @@
 }
 .reset-p(){
 	margin: 0;
+}
+.reset-list(){
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.box-shadow-bottom(@op: 0.75){
+	box-shadow: 0px 7px 5px -1px rgba(50, 50, 50, @op);
+}
+.box-shadow-top-inset(@op: 0.75){
+	box-shadow: inset 0px 7px 5px -1px rgba(50, 50, 50, @op);
 }

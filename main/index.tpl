@@ -159,8 +159,10 @@ php@
 					<div class="cb"></div>
 				</header>
 				<section class="general">
-					<nav class="navigation navigation_top">
-						@leftCatal@
+					<nav class="navigation navigation_top" id="nav">
+						<ul class="menu-cat">
+							@leftCatal@
+						</ul>
 					</nav>
 				</section>
 			</div>
