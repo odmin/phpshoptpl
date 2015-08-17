@@ -147,8 +147,8 @@ php@
 											<span class="icon icon-basket"></span><br>
 											Корзина<br>
 											<a href="/order/" title="В корзину">
-												<span id="num">@num@</span> шт. 
-												<span id="sum">@sum@</span> @productValutaName@.
+												<span id="num">@num@</span>&nbsp;шт. 
+												<span id="sum">@sum@</span>&nbsp;@productValutaName@.
 											</a>
 										</div>
 									</div>
@@ -158,6 +158,11 @@ php@
 					</div>
 					<div class="cb"></div>
 				</header>
+				<section class="general">
+					<nav class="navigation navigation_top">
+						@leftCatal@
+					</nav>
+				</section>
 			</div>
 		</div>
 		<footer class="page__footer">
@@ -189,7 +194,7 @@ php@
 			<div id="catb" class="topCat"><div class="shadow-catb"></div>
 			  <table border="0" cellspacing="0" cellpadding="0" width="100%" align="center">
 				<tr>
-				  @leftCatal@
+
 				</tr>
 			  </table>
 			</div>			@mainTextFastComStart@
