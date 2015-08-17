@@ -1,0 +1,20 @@
+.generate-grid(5);
+
+.generate-grid(@n, @i: 1) when (@i =< @n) {
+  .grid__col@{i} {
+  	float: left;
+  	box-sizing: border-box;
+    width: (@i * 100% / @n);
+  }
+  .generate-grid(@n, (@i + 1));
+}
+.grid{
+	float: left;
+	width: 100%;
+	&_indent_sm{
+		padding: 12px 0 14px;
+	}
+}
+.cb{
+	clear: both;
+}

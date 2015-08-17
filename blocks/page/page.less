@@ -1,0 +1,29 @@
+.reset-indent(){
+	margin: 0;
+	padding: 0;
+}
+
+html,
+body,
+.page {
+	.reset-indent();
+	height: 100%;
+}
+
+.page {
+	background: rgb(148,214,226);
+	background: linear-gradient(to bottom, rgba(148,214,226,1) 0%,rgba(255,255,255,1) 100%);
+	font: normal .75em Arial, Tahoma, Helvetica, sans-serif;
+	&__content {
+		.reset-indent();
+		box-sizing: border-box;
+		min-height: 100%;
+		padding-bottom: 90px;
+		background: url('images/files/body-bg.png') no-repeat 0 0;
+	}
+	&__footer {
+		.reset-indent();
+		height: 80px;
+		margin-top: -80px;
+	}
+}

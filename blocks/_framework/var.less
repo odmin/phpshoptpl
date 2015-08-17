@@ -1,0 +1,21 @@
+// breakpoints
+@wide: ~'only screen and (min-width: 1281px)';
+@desktop:   ~'only screen and (min-width: 1025px) and (max-width: 1280px)';
+@gtetablet:    ~'only screen and (min-width: 1023px)';
+@tabletls:    ~'only screen and (min-width: 768px) and (max-width: 1024px)';
+@tabletpt:    ~'only screen and (min-width: 376px) and (max-width: 768px)';
+@ltetablet:    ~'screen and (max-device-width: 768px)'; // планшеты и ниже
+@phone:    ~'only screen and (max-width: 375px)';
+
+@color-white: #fff;
+@color-yellow: #FFDE45;
+@color-eastern-blue: #17899E;
+@color-text: rgb(85, 85, 85);
+
+.reset-link(){
+	text-decoration: none;
+	color: @color-text;
+	&:hover{
+		color: @color-yellow;
+	}
+}
