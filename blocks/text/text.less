@@ -1,7 +1,48 @@
 @import '../_framework/var';
 .text{
 	padding: 0 14px;
+	
+	&__phone{
+		.reset-p();
+		font-size: 23px;
+		padding: 5px 0;
+		& > span{
+			color: @color-yellow;
+			font-size: 16px;
+			display: inline-block;
+			vertical-align: top;
+			padding: 2px 0 0;
+		}
+	}
+
+	&__line{
+		.reset-p();
+		&_first{
+			padding-top: 1em;
+		}
+
+		&_returncall{
+			color: @color-white;
+			a{
+				text-decoration: none;
+				border-bottom: 1px dotted @color-yellow;
+				color: @color-yellow;
+				font-size: 12px;
+				&:hover{
+					border-bottom: none;
+				}
+			}
+		}
+	}
+	
 	&_white{
 		color: @color-white;
 	}
+	&_sm{
+		font-size: .95em;
+	}
+	&_ital{
+		font-style: italic;
+	}
+
 }

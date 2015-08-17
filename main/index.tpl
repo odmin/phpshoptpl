@@ -106,9 +106,55 @@ php@
 							<p class="text text_white">
 								@name@
 							</p>
+							<div class="text">
+								@w4aSmartSearch@
+							</div>
 						</div>
-						<div class="grid__col1"></div>
-						<div class="grid__col1"></div>
+						<div class="grid__col1">
+							<div class="header-section">
+								<div class="text text_sm text_ital text_white">
+									<p class="text__line text__line_first">Заказы по телефону с 9 до 23<br>Через магазин Круглосуточно</p>
+									<p class="text__phone">
+										@telNum@
+									</p>
+								</div>
+								<div class="text text_sm text_ital">
+									<p class="text__line text__line_returncall">
+										@returncall@
+								</div>
+							</div>
+						</div>
+						<div class="grid__col1">
+							<div class="header-section">
+								<div class="profile profile_flex">
+									<div class="header-section header-section_theme_none header-section_float header-section_oneof_3">
+										<div class="profile-blank">
+											<a href="/newprice/" title="Товары со скидкой"  class="profile-blank__link profile-blank__link_img">
+												<span class="icon icon-discount"></span><br>
+												<span class="profile-blank__link">Товары<br>со скидкой</span>
+											</a>
+										</div>
+									</div>
+									<div class="header-section header-section_float header-section_oneof_3 header-section_sm">
+										<div class="profile-blank">
+											<span class="icon icon-profile"></span><br>
+											Профиль<br>
+											@usersDisp@
+										</div>
+									</div>
+									<div class="header-section header-section_float header-section_oneof_3 header-section_sm">
+										<div class="profile-blank profile-blank_basket">
+											<span class="icon icon-basket"></span><br>
+											Корзина<br>
+											<a href="/order/" title="В корзину">
+												<span id="num">@num@</span> шт. 
+												<span id="sum">@sum@</span> @productValutaName@.
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
 					</div>
 					<div class="cb"></div>
 				</header>
@@ -123,37 +169,17 @@ php@
 			<div id="header">
 				
 			<div class="header htable">
-				<div class="hcell hcell-1 first" id="logo"><a title="@name@" href="/"><img src="@logo@" alt="@name@"></a></div>
-				<div class="hcell hcell-2">
-					<div class="hcell-content">
-					<span>Профсервиз &ndash; розничный интернет магазин посуды Leander. Фарфор Чехии, Столовые сервизы, Чайные сервизы. Хрусталь Bohemia</span>
-							@w4aSmartSearch@
-					</div>
-				</div>
-				<div class="hcell hcell-3" id="contacts">
-					<div class="hcell-content">
-						<p>Заказы по телефону с 9 до 23<br>Через магазин Круглосуточно</p>
-					  <p class="phone">@telNum@</p>
-						<div class="feedback">@returncall@</div>
-					</div>
-				</div>
+				
 				<div class="hcell hcell-4 last">
 					<div class="htable">
 						<div class="hcell hcell-1 first"><div class="hcell-content">
-							<a href="/newprice/" title="Товары со скидкой"><span class="icon icon-discount"></span><br>
-							Товары<br>со скидкой</a>
-							</div>
+							
 						</div>
 						<div class="hcell hcell-2"><div class="hcell-content">
-							<span class="icon icon-profile"></span><br>
-							Профиль<br>
-							@usersDisp@</div>
+							</div>
 						</div>
 						<div class="hcell hcell-3 last" id="basket"><div class="hcell-content">
-							<span class="icon icon-basket"></span><br>
-							Корзина<br>
-
-							<a href="/order/" title="В корзину"><span id="num">@num@</span> шт. <span id="sum">@sum@</span> @productValutaName@.</a></div>
+							</div>
 						</div>
 					</div>
 				</div>
