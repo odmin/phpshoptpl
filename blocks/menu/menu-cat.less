@@ -17,6 +17,8 @@
 
 	&__item{
 		display: table-cell;
+		position: relative;
+		
 		&:hover{
 			.box-shadow-top-inset(.5);
 			background: @color-yellow-bold;
@@ -27,9 +29,50 @@
 .menu-cat-child{
 	.reset-list();
 	
+	position: absolute;
+	left: 0;
+	top: 38px;
+	z-index: 5;
+	
+	width: 400px;
+
 	display: none;
 	
+	font-size: 0.9em;
+	background: @color-yellow-bold;
+	
+	
 	&__link{
-		.menu-link()
+		.menu-link();
+
+		white-space: nowrap;
+		
+		display: inline-block;
+		padding: 11px 3px;
+		
+	}
+
+	&__item{
+		width: 50%;
+		float: left;
+		box-sizing: border-box;
+		
+		text-align: left;
+		border-bottom: 1px solid @color-gold;
+		
+		&:nth-child(odd){
+			border-right: 1px solid @color-gold;
+		}
+		&:hover{
+			background: @color-gold;
+		}
+	}
+}
+.menu-cat__item{
+	&:nth-child(n + 7){
+		.menu-cat-child{
+			left: auto;
+			right: 0;
+		}
 	}
 }

@@ -160,10 +160,13 @@ php@
 				</header>
 				<section class="general">
 					<nav class="navigation navigation_top" id="nav">
-						<ul class="menu-cat">
+						<ul class="menu-cat" id="menu-top">
 							@leftCatal@
 						</ul>
 					</nav>
+					<aside class="general__area">
+						
+					</aside>
 				</section>
 			</div>
 		</div>
@@ -171,27 +174,11 @@ php@
 			
 		</footer>
 	</div>
+	<script language="Javascript" type="text/javascript" src="@php echo $GLOBALS['SysValue']['dir']['templates'].chr(47).$_SESSION['skin'].chr(47); php@javascript/production.js"></script>
 	<div id="wrapper">
 		<div id="mainblock">
 			<div id="header">
 				
-			<div class="header htable">
-				
-				<div class="hcell hcell-4 last">
-					<div class="htable">
-						<div class="hcell hcell-1 first"><div class="hcell-content">
-							
-						</div>
-						<div class="hcell hcell-2"><div class="hcell-content">
-							</div>
-						</div>
-						<div class="hcell hcell-3 last" id="basket"><div class="hcell-content">
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
 		<div id="content">
 			<div id="catb" class="topCat"><div class="shadow-catb"></div>
 			  <table border="0" cellspacing="0" cellpadding="0" width="100%" align="center">
