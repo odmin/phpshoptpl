@@ -165,7 +165,21 @@ php@
 						</ul>
 					</nav>
 					<aside class="general__area">
-						
+						@mainTextFastComStart@
+						<div class="fast-messages">
+							@mainTextFast@
+						</div>
+						@mainTextFastComEnd@
+						<div class="banner banner_full">
+							<a href="/page/series.html" target="_self" class="banner__link">
+								Посуда по коллекциям
+							</a>
+						</div>
+						<div class="banner banner_full banner_indent_top">
+							<a href="/page/skidki.html" target="_self">
+								<img src="/UserFiles/Image/Dop/banner-skidki.jpg" alt="Скидки" class="banner__img">
+							</a>
+						</div>
 					</aside>
 				</section>
 			</div>
@@ -175,9 +189,7 @@ php@
 		</footer>
 	</div>
 	<script language="Javascript" type="text/javascript" src="@php echo $GLOBALS['SysValue']['dir']['templates'].chr(47).$_SESSION['skin'].chr(47); php@javascript/production.js"></script>
-	<div id="wrapper">
-		<div id="mainblock">
-			<div id="header">
+
 				
 		<div id="content">
 			<div id="catb" class="topCat"><div class="shadow-catb"></div>
@@ -186,13 +198,11 @@ php@
 
 				</tr>
 			  </table>
-			</div>			@mainTextFastComStart@
+			</div>			
 			<div class="box-content-shadow mm-box-new">
-				<div class="fast-messages">
-					@mainTextFast@
-				</div>
+				
 			</div>
-			@mainTextFastComEnd@
+			
 			<div class="box-content-shadow clearfix">
 				<a href="/page/series.html" target="_self"><img src="/UserFiles/Image/Dop/serii.png" alt="Посуда по сериям"></a>
 				<p></p>
