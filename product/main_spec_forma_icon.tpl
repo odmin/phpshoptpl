@@ -47,7 +47,7 @@
 	</div>
 	<div class="product-card__notify">@php // Уведомления php@
 		@ComStartNotice@
-			<a href="/users/notice.html?productId=@productUid@" title="@productNotice@" class="btn">
+			<a href="/users/notice.html?productId=@productUid@" title="@productNotice@" class="button button_buy">
 				@productNotice@
 			</a>
 		@ComEndNotice@

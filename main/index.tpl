@@ -208,6 +208,15 @@ php@
 					<aside class="general__area general__area_shadow">
 						@specMainIcon@
 					</aside>
+					<header class="general__separator">
+						<span class="separator">
+							<h2 class="separator__title">Хиты продаж</h2>
+							<a href="/spec/" title="Показать все" class="separator__link">Показать все</a>
+						</span>
+					</header>
+					<aside class="general__area general__area_shadow">
+						@specMain@
+					</aside>
 				</section>
 			</div>
 		</div>
@@ -218,16 +227,8 @@ php@
 	<script language="Javascript" type="text/javascript" src="@php echo $GLOBALS['SysValue']['dir']['templates'].chr(47).$_SESSION['skin'].chr(47); php@javascript/production.js"></script>
 
 				
-		<div id="content" style="margin-top: 700px;">
+		<div id="content" style="margin-top: 1300px;">
 			
-			
-			
-			<div class="box-title">
-				<h2>Хиты продаж</h2><a href="/spec/" title="Показать все">Показать все</a>
-			</div>
-			<div class="box-content-shadow">
-				@specMain@
-			</div>
 				<div class="box-title">
 					 <h2>Информация</h2><a href="/news/" title="Новости">Новости</a>
 				</div>

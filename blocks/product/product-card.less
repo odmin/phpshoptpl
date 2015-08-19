@@ -73,6 +73,10 @@
 		.productSklad{
 			.button-green;
 		}
+		.productSklad-no{
+			.button-green;
+			background: @color-red;
+		}
 	}
 
 	&__price{
@@ -81,8 +85,10 @@
 		text-align: center;
 	}
 
-	&__cart{
+	&__cart,
+	&__notify{
 		margin: 15px 0;
+		text-align: center;
 	}
 
 	&__input{
@@ -94,5 +100,13 @@
 		.product-card__button_detail{
 			display: inline-block;
 		}
+	}
+}
+.product-two_hover{
+	& > *{
+		opacity: 0.5;
+	}
+	.product-card__notify{
+		opacity: 1;
 	}
 }

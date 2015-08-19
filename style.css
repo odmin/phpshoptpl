@@ -459,13 +459,25 @@ body,
   background: #3db656;
   border-radius: 3px;
 }
+.product-card__avaliable .productSklad-no {
+  display: inline-block;
+  padding: 2.5px 10px;
+  box-sizing: border-box;
+  text-align: center;
+  color: #ffffff;
+  background: #3db656;
+  border-radius: 3px;
+  background: #ff0000;
+}
 .product-card__price {
   margin: 15px 0;
   width: 100%;
   text-align: center;
 }
-.product-card__cart {
+.product-card__cart,
+.product-card__notify {
   margin: 15px 0;
+  text-align: center;
 }
 .product-card__input {
   float: right;
@@ -473,6 +485,12 @@ body,
 }
 .product-card:hover .product-card__button_detail {
   display: inline-block;
+}
+.product-two_hover > * {
+  opacity: 0.5;
+}
+.product-two_hover .product-card__notify {
+  opacity: 1;
 }
 
 .profile-blank {
