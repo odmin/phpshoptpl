@@ -3,5 +3,17 @@
 .general{
 	&__area{
 		padding: @indent;
+		&_shadow{
+			.box-shadow-top-inset(.3);
+		}
+	}
+
+	&__separator{
+		display: inline-block;
+		width: 100%;
+		background: @color-gold;
+		.box-shadow-top-inset(.5);
+		text-align: center;
+		padding: 10px 0;
 	}
 }

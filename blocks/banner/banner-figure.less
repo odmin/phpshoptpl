@@ -1,0 +1,33 @@
+@import '../_framework/var';
+
+.banner-figure{
+	.reset-figure();
+	position: relative;
+	
+	img{
+		width: 100%;
+		height: auto;
+	}
+
+	&__caption{
+		position: absolute;
+		z-index: 11111;
+		top: 0;
+		
+		width: 100%;
+		padding-top: 10px;
+		
+		text-align: center;
+
+		&_big{
+			font-size: 16px;
+			text-transform: uppercase;
+			font-style: italic;
+			font-weight: bold;
+		}
+	}
+
+	&_indent{
+		margin: @indent / 3 0;
+	}
+}

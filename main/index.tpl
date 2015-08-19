@@ -180,6 +180,33 @@ php@
 								<img src="/UserFiles/Image/Dop/banner-skidki.jpg" alt="Скидки" class="banner__img">
 							</a>
 						</div>
+						<div class="grid grid_indent_sm">
+							<div class="grid__col1">
+								@leftMenu@
+							</div>
+							<div class="grid__col3">
+								<div class="centermenu">
+									<div class="banner banner_full">
+										<div class="bxslider">
+											@centerMenu@
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="grid__col1">
+								@rightMenu@
+							</div>
+						</div>
+						<div class="cb"></div>
+					</aside>
+					<header class="general__separator">
+						<span class="separator">
+							<h2 class="separator__title">Новинки</h2>
+							<a href="/newtip/" title="Показать все" class="separator__link">Показать все</a>
+						</span>
+					</header>
+					<aside class="general__area general__area_shadow">
+						@specMainIcon@
 					</aside>
 				</section>
 			</div>
@@ -191,52 +218,10 @@ php@
 	<script language="Javascript" type="text/javascript" src="@php echo $GLOBALS['SysValue']['dir']['templates'].chr(47).$_SESSION['skin'].chr(47); php@javascript/production.js"></script>
 
 				
-		<div id="content">
-			<div id="catb" class="topCat"><div class="shadow-catb"></div>
-			  <table border="0" cellspacing="0" cellpadding="0" width="100%" align="center">
-				<tr>
-
-				</tr>
-			  </table>
-			</div>			
-			<div class="box-content-shadow mm-box-new">
-				
-			</div>
+		<div id="content" style="margin-top: 700px;">
 			
-			<div class="box-content-shadow clearfix">
-				<a href="/page/series.html" target="_self"><img src="/UserFiles/Image/Dop/serii.png" alt="Посуда по сериям"></a>
-				<p></p>
-				<a href="/page/skidki.html" class=link><img src="/UserFiles/Image/Dop/banner-skidki.jpg" border="0" align="top" name="myimage" id="myimage" onMouseOver="document.all('myimage').src='/UserFiles/Image/Dop/banner-skidki-2.jpg'" onMouseOut="document.all('myimage').src='/UserFiles/Image/Dop/banner-skidki.jpg'" alt="Скидки"></a>
-				<p></p>
-				<div class="fl left-menu">@leftMenu@</div>
-				<div class="fr right-menu">@rightMenu@</div>
-	<div class="slider">
-		<div class="box shadow">
-			<div class="shadow-t"></div>
-			<div class="shadow-r"></div>
-			<div class="shadow-b"></div>
-			<div class="shadow-l"></div>
-			<div class="shadow-t-l"></div>
-			<div class="shadow-t-r"></div>
-			<div class="shadow-b-r"></div>
-			<div class="shadow-b-l"></div>
-			<div class="shadow-content" style="height:453px">
-			<div class="bxslider">
-							@centerMenu@
-			</div>
-			</div>
-		</div>
-	</div>
-			</div>
-			<div class="box-title">
-				<h2>Новинки</h2><a href="/newtip/" title="Показать все">Показать все</a>
-			</div>
-			<div class="box-content-shadow new-tip">
-				@specMainIcon@
-			</div>
-			<script>
-				$('.new-tip > table > tbody > tr > td:odd').addClass('setka');
-			</script>
+			
+			
 			<div class="box-title">
 				<h2>Хиты продаж</h2><a href="/spec/" title="Показать все">Показать все</a>
 			</div>

@@ -1,4 +1,4 @@
-<div class="box shadow">
+<div class="box shadow"> <!-- хиты продаж -->
     <div class="shadow-t"></div>
     <div class="shadow-r"></div>
     <div class="shadow-b"></div>

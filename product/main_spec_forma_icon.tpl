@@ -1,95 +1,55 @@
-<div class="box shadow">
+@php // Новинки php@
 
-	<div class="shadow-t"></div>
-
-	<div class="shadow-r"></div>
-
-	<div class="shadow-b"></div>
-
-	<div class="shadow-l"></div>
-
-	<div class="shadow-t-l"></div>
-
-	<div class="shadow-t-r"></div>
-
-	<div class="shadow-b-r"></div>
-
-	<div class="shadow-b-l"></div>
-
-	<div class="shadow-content">
-
-		
-
-		<div class="prod_card @classHover@">
-
-		  <div class="prod_card2">
-
-			<div class="tovarDivContent1 text-center">@productDes@</div>
-
-			<table cellpadding="0" cellspacing="0" border="0" class="tovarDivImg1" width="100%">
-
-			  <tr>
-
-				<td align="center" valign="middle"><!--<a class="highslide" onclick="return hs.expand(this)" href="@productImgBigFoto@" target="_blank" getParams="null" title="@productName@"><img src="@productImg@" lowsrc="images/shop/no_photo.gif"  onerror="NoFoto(this,'@pathTemplate@')" onload="EditFoto(this,@productImgWidth@)" alt="@productName@" title="@productName@" border="0"></a>
-
-				  <div class=highslide-caption>@productName@</div>-->
-
-				  <a href="/shop/UID_@productUid@.html" title="@productName@"><img src="@productImg@" lowsrc="images/shop/no_photo.gif"  onerror="NoFoto(this,'@pathTemplate@')" onload="EditFoto(this,@productImgWidth@)" alt="@productName@" title="@productName@" border="0"></a></td>
-
-			  </tr>
-
-			</table>
-<div class="podrobno"><a href="/shop/UID_@productUid@.html" title="@productName@"><img src="images/podrobno.png" alt="Подробно" title="Подробно" border="0"></a></div>
-			<div class="tovarDivName1 text-justify"><a href="/shop/UID_@productUid@.html" title="@productName@"><strong>@productName@</strong></a></div>
-
-			@ComStartCart@ @productSklad@ @ComEndCart@
-
-			<div class="prcent text-center">
-
-				@ComStart@
-
-				<div class="tovarDivOldPrice1 tovarDivPrice__content">@productPriceRub@</div>
-
-				<div class="tovarDivPrice1"><div class="pr-l"><div class="pr-r tovarDivPrice__content" title="Цена: @productName@">@productPrice@ <i class="icon icon-price"></i></div></div></div>
-
-				@ComEnd@
-
-			</div>
-
-			<div class="tovarDivAdd1 text-center">
-
-			  <div class="tovarDivAdd3">
-
-				<!-- Блок корзина-->
-
-				@ComStartCart@
-
-				<A href="javascript:AddToCartNum(@productUid@,'n@productUid@')" title="Купить @productName@" class="btn-buy"></A>
-
-				<INPUT class="forma spinner" id="n@productUid@" type=num maxLength=5 size=3 value=1 name="n@productUid@">
-
-				@ComEndCart@
-
-				<!-- Блок корзина -->
-
-				<!-- Ѕлок уведомить -->
-
-				@ComStartNotice@<a href="/users/notice.html?productId=@productUid@" title="@productNotice@" class="btn">@productNotice@</a>@ComEndNotice@
-
-				<!-- Ѕлок уведомить -->
-
-			  </div>
-
-			  <!--<div class="tovarDivAdd2"><a href="javascript:AddToCompare(@productUid@)" title="—равнить @productName@">—равнить</a></div>-->
-
-			</div>
-
-		  </div>
-
-		</div>
-
-		
-
+<div class="product-card @classHover@">
+	<div class="product-card__desc">
+		@productDes@
 	</div>
-
+	<div class="product-card__img">
+		<a href="/shop/UID_@productUid@.html" title="@productName@">
+			<img src="@productImg@" lowsrc="images/shop/no_photo.gif"  
+				onerror="NoFoto(this,'@pathTemplate@')" 
+				onload="EditFoto(this,@productImgWidth@)" 
+				alt="@productName@" 
+				title="@productName@" 
+				border="0">
+		</a>
+	</div>
+	<a href="/shop/UID_@productUid@.html" title="@productName@" class="product-card__button product-card__button_detail">
+		<span>Подробно</span>
+	</a>
+	<a href="/shop/UID_@productUid@.html" title="@productName@" class="product-card__title">
+		<strong>@productName@</strong>
+	</a>
+	<div class="product-card__avaliable"> @php // Наличие на складе php@
+		@ComStartCart@ @productSklad@ @ComEndCart@
+	</div>
+	<div class="product-card__price">@php // блок со старой и новой ценой php@
+		@ComStart@
+		<div class="price">
+			<div class="price__old">
+				@productPriceRub@
+			</div>
+			<div class="price__actual">
+				@productPrice@ <i class="icon icon-price"></i>
+			</div>
+		</div>
+		@ComEnd@
+	</div>
+	<div class="product-card__cart">@php // Добавить в корзину php@
+		@ComStartCart@
+			<a href="javascript:AddToCartNum(@productUid@,'n@productUid@')" title="Купить @productName@" class="button button_buy">
+				Купить
+			</a>
+			<div class="product-card__input">
+				<input class="forma spinner" id="n@productUid@" type=number maxLength=5 size=3 value=1 min=1 name="n@productUid@">
+			</div>
+		@ComEndCart@
+	</div>
+	<div class="product-card__notify">@php // Уведомления php@
+		@ComStartNotice@
+			<a href="/users/notice.html?productId=@productUid@" title="@productNotice@" class="btn">
+				@productNotice@
+			</a>
+		@ComEndNotice@
+	</div>
 </div>

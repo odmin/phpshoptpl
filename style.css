@@ -1,4 +1,30 @@
 
+.banner-figure {
+  margin: 0;
+  position: relative;
+}
+.banner-figure img {
+  width: 100%;
+  height: auto;
+}
+.banner-figure__caption {
+  position: absolute;
+  z-index: 11111;
+  top: 0;
+  width: 100%;
+  padding-top: 10px;
+  text-align: center;
+}
+.banner-figure__caption_big {
+  font-size: 16px;
+  text-transform: uppercase;
+  font-style: italic;
+  font-weight: bold;
+}
+.banner-figure_indent {
+  margin: 10px 0;
+}
+
 .banner {
   display: inline-block;
   box-sizing: border-box;
@@ -33,8 +59,61 @@
           transition: all .15s ease;
 }
 
+.button {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  text-decoration: none;
+  border: none;
+  background: none;
+  border-radius: 5px;
+  display: inline-block;
+}
+.button_buy {
+  padding: 7.5px 15px;
+  color: #ffffff;
+  background: #05677a;
+  margin: 5px;
+}
+
+.centermenu {
+  margin: 25px auto 30px;
+  width: 458px;
+  color: #555555;
+}
+.centermenu .bx-controls {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+.centermenu .slider-content {
+  position: absolute;
+  top: 0;
+  text-align: left;
+  padding: 0 15px;
+}
+.centermenu .slider-content h4 {
+  font-size: 16px;
+  text-transform: uppercase;
+  font-style: italic;
+  font-weight: bold;
+  margin: 15px 0;
+}
+
 .general__area {
   padding: 30px;
+}
+.general__area_shadow {
+  box-shadow: inset 0px 7px 5px -1px rgba(50, 50, 50, 0.3);
+}
+.general__separator {
+  display: inline-block;
+  width: 100%;
+  background: #ffd203;
+  box-shadow: inset 0px 7px 5px -1px rgba(50, 50, 50, 0.5);
+  text-align: center;
+  padding: 10px 0;
 }
 
 .grid__col1 {
@@ -289,6 +368,113 @@ body,
   margin-top: -80px;
 }
 
+.price__actual {
+  display: inline-block;
+  padding: 5px 10px;
+  box-sizing: border-box;
+  text-align: center;
+  color: #000;
+  background: #ffd203;
+  border-radius: 5px;
+  font-size: 23px;
+}
+
+.panel_l,
+.panel_r {
+  width: 20%;
+}
+
+.button-green {
+  display: inline-block;
+  padding: 2.5px 10px;
+  box-sizing: border-box;
+  text-align: center;
+  color: #ffffff;
+  background: #3db656;
+  border-radius: 3px;
+}
+.product-card {
+  width: 90%;
+  margin: 0 5%;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid #ececec;
+  position: relative;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.product-card__desc {
+  color: #555555;
+  text-align: center;
+  margin-bottom: 1em;
+  min-height: 28px;
+}
+.product-card__img {
+  width: 100%;
+  margin: 15px 0;
+}
+.product-card__button {
+  display: inline-block;
+  padding: 2.5px 10px;
+  box-sizing: border-box;
+  text-align: center;
+  color: #ffffff;
+  background: #3db656;
+  border-radius: 3px;
+  text-decoration: none;
+}
+.product-card__button_detail {
+  display: none;
+  font-size: 1.5em;
+  position: absolute;
+  left: 0;
+  top: 35%;
+  width: 70%;
+  margin: 0 15%;
+}
+.product-card__title {
+  width: 100%;
+  margin: 15px 0;
+  display: inline-block;
+  min-height: 75px;
+  color: #000;
+  line-height: 1.5;
+  text-align: justify;
+}
+.product-card__title:hover {
+  text-decoration: none;
+}
+.product-card__avaliable {
+  text-align: center;
+  margin: 15px 0;
+}
+.product-card__avaliable .productSklad {
+  display: inline-block;
+  padding: 2.5px 10px;
+  box-sizing: border-box;
+  text-align: center;
+  color: #ffffff;
+  background: #3db656;
+  border-radius: 3px;
+}
+.product-card__price {
+  margin: 15px 0;
+  width: 100%;
+  text-align: center;
+}
+.product-card__cart {
+  margin: 15px 0;
+}
+.product-card__input {
+  float: right;
+  padding: 10px 0;
+}
+.product-card:hover .product-card__button_detail {
+  display: inline-block;
+}
+
 .profile-blank {
   padding: 5px;
   text-align: center;
@@ -471,6 +657,22 @@ body,
 .sfr_content > ul {
   padding: 0;
   margin: 0;
+}
+
+.separator__title {
+  display: inline-block;
+  text-transform: uppercase;
+  font: bold italic 22px Arial, Tahoma, Helvetica, sans-serif;
+  margin: 0;
+}
+.separator__link {
+  display: inline-block;
+  color: #000;
+  font-style: italic;
+  text-indent: 5px;
+}
+.separator__link:hover {
+  text-decoration: none;
 }
 
 .text {
