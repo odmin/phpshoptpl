@@ -23,6 +23,13 @@
 			.box-shadow-top-inset(.5);
 			background: @color-yellow-bold;
 		}
+
+		@media @tabletls{
+			width: 100% /6;
+			display: inline-block;
+			text-align: center;
+		}
+
 	}
 
 }
@@ -32,7 +39,7 @@
 	position: absolute;
 	left: 0;
 	top: 38px;
-	z-index: 5;
+	z-index: 111111;
 	
 	width: 400px;
 
@@ -41,7 +48,11 @@
 	font-size: 0.9em;
 	background: @color-yellow-bold;
 	
-	
+	@media @tabletls{
+		width: 200px;
+		text-align: center;
+	}
+
 	&__link{
 		.menu-link();
 
@@ -66,13 +77,40 @@
 		&:hover{
 			background: @color-gold;
 		}
+
+		@media @tabletls{
+			width: 99%;
+			border-right: none;
+			&:nth-child(odd){
+				border-right: none;
+			}
+		}
+
 	}
 }
 .menu-cat__item{
 	&:nth-child(n + 7){
 		.menu-cat-child{
-			left: auto;
-			right: 0;
+			@media only screen and (min-width: 1025px){
+				left: auto;
+				right: 0;
+			}
+		}
+	}
+	&:nth-child(5n + 1){
+		.menu-cat-child{
+			@media @tabletls{
+				left: auto;
+				right: 0;
+			}
+		}
+	}
+	&:nth-child(1){
+		.menu-cat-child{
+			@media @tabletls{
+				left: 0;
+				right: auto;
+			}
 		}
 	}
 }

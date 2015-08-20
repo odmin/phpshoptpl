@@ -268,6 +268,13 @@
   box-shadow: inset 0px 7px 5px -1px rgba(50, 50, 50, 0.5);
   background: #ffb503;
 }
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .menu-cat__item {
+    width: 16.66666667%;
+    display: inline-block;
+    text-align: center;
+  }
+}
 .menu-cat-child {
   margin: 0;
   padding: 0;
@@ -275,11 +282,17 @@
   position: absolute;
   left: 0;
   top: 38px;
-  z-index: 5;
+  z-index: 111111;
   width: 400px;
   display: none;
   font-size: 0.9em;
   background: #ffb503;
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .menu-cat-child {
+    width: 200px;
+    text-align: center;
+  }
 }
 .menu-cat-child__link {
   text-decoration: none;
@@ -301,9 +314,32 @@
 .menu-cat-child__item:hover {
   background: #ffd203;
 }
-.menu-cat__item:nth-child(n + 7) .menu-cat-child {
-  left: auto;
-  right: 0;
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .menu-cat-child__item {
+    width: 99%;
+    border-right: none;
+  }
+  .menu-cat-child__item:nth-child(odd) {
+    border-right: none;
+  }
+}
+@media only screen and (min-width: 1025px) {
+  .menu-cat__item:nth-child(n + 7) .menu-cat-child {
+    left: auto;
+    right: 0;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .menu-cat__item:nth-child(5n + 1) .menu-cat-child {
+    left: auto;
+    right: 0;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .menu-cat__item:nth-child(1) .menu-cat-child {
+    left: 0;
+    right: auto;
+  }
 }
 
 .menu__item {
@@ -403,6 +439,11 @@
   width: 100%;
   font-size: 14px;
 }
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .navigation {
+    text-align: left;
+  }
+}
 
 html {
   margin: 0;
@@ -486,6 +527,11 @@ a img {
   margin-bottom: 1em;
   min-height: 28px;
 }
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .product-card__desc {
+    min-height: 45px;
+  }
+}
 .product-card__img {
   width: 100%;
   margin: 15px 0;
@@ -520,6 +566,11 @@ a img {
 }
 .product-card__title:hover {
   text-decoration: none;
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .product-card__title {
+    min-height: 90px;
+  }
 }
 .product-card__avaliable {
   text-align: center;
@@ -557,6 +608,11 @@ a img {
 .product-card__input {
   float: right;
   padding: 10px 0;
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .product-card__input {
+    float: none;
+  }
 }
 .product-card:hover .product-card__button_detail {
   display: inline-block;
@@ -775,6 +831,11 @@ a img {
   margin: 0;
   font-size: 23px;
   padding: 5px 0;
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .text__phone {
+    font-size: 20px;
+  }
 }
 .text__phone > span {
   color: #ffde45;
