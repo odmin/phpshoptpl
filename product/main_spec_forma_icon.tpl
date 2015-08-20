@@ -52,4 +52,5 @@
 			</a>
 		@ComEndNotice@
 	</div>
+    <div class="cb"></div>
 </div>

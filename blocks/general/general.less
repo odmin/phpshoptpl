@@ -7,6 +7,17 @@
 		&_shadow{
 			.box-shadow-top-inset(.3);
 		}
+		&_spec{ //backend helper
+			> table{
+				width: 100%;
+				tr{
+					@media @notdesktop{
+						display: block;
+						width: 100%;
+					}
+				}
+			}
+		}
 	}
 
 	&__separator{

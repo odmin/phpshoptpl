@@ -1,4 +1,9 @@
+@import '../_framework/var';
 .panel_l,
 .panel_r{
 	width: 20%;
+	@media @notdesktop {
+		display: block;
+		width: 100%;
+	}
 }

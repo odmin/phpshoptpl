@@ -1,12 +1,25 @@
+@import '../_framework/var';
+
 .generate-grid(5);
+.generate-grid-tablet(6);
 
 .generate-grid(@n, @i: 1) when (@i =< @n) {
-  .grid__col@{i} {
-  	float: left;
-  	box-sizing: border-box;
-    width: (@i * 100% / @n);
-  }
-  .generate-grid(@n, (@i + 1));
+	.grid__col@{i} {
+		float: left;
+		box-sizing: border-box;
+		width: (@i * 100% / @n);
+	}
+	.generate-grid(@n, (@i + 1));
+}
+.generate-grid-tablet(@n, @i: 1) when (@i =< @n) {
+	.grid__col_tablet@{i} {
+		@media @tabletpt{
+			float: left;
+			box-sizing: border-box;
+			width: (@i * 100% / @n);
+		}
+	}
+	.generate-grid-tablet(@n, (@i + 1));
 }
 .grid{
 	float: left;
