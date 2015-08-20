@@ -66,7 +66,7 @@ grunt.config.init({
           },
       },
       js: {
-          files: ['<%= path_libs %>**/*.js', '<%= path_views %>**/*.js'],
+          files: ['<%= path_blocks %>**/*.js'],
           tasks: ['concat'],
           options: {
               spawn: false,

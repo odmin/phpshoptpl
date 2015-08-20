@@ -43,9 +43,12 @@ php@
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 	<link rel="icon" href="favicon.ico" type="image/x-icon">
 	<link href="@pageCss@" type="text/css" rel="stylesheet">
-	 <!--[if IE 7]>
-	<link href="phpshop/templates/profserviz/ie7-style.css" type="text/css" rel="stylesheet">
-	 <![endif]-->
+	<!--[if IE 7]>
+		<link href="phpshop/templates/profserviz/ie7-style.css" type="text/css" rel="stylesheet">
+	<![endif]-->
+	<!--[if lte IE 8]>
+		<script language="Javascript" type="text/javascript" src="@php echo $GLOBALS['SysValue']['dir']['templates'].chr(47).$_SESSION['skin'].chr(47); php@javascript/html5.js"></script>
+	<![endif]-->
 	<!--[if IE]><link href="@php echo $GLOBALS['SysValue']['dir']['templates'].chr(47).$_SESSION['skin'].chr(47); php@/style.ie.css" type="text/css" rel="stylesheet"><![endif]-->
 	<link href="images/files/jquery.bxslider/jquery.bxslider.css" rel="stylesheet">
 	
@@ -67,23 +70,14 @@ php@
 	<!-- bxSlider Javascript file -->
 	<script type="text/javascript" src="images/files/jquery.bxslider/jquery.bxslider.min.js"></script>
 	<script src="scripts/AC_RunActiveContent.js" type="text/javascript"></script>
-	<script type="text/javascript">
-		$(document).ready(function(){
-			$('.bxslider').bxSlider({
-			controls:false,
-			auto:true,
-			pause:5000
-		  });
-		});
-	</script>
 </head>
 
 <body onLoad="default_load('false','false');NavActive('index');LoadPath('@ShopDir@');" class="bod">
 	<div class="black_overlay" id="fade"></div>
-	<div id="back-top"><a href="#top"><span></span></a></div>
+	<div id="back-top" class="navigation-topbtn"><a class="navigation-topbtn__link" href="#top"><span></span></a></div>
 	<div class="page">
 		<div class="page__content">
-			<div class="wrapper">
+			<div class="wrapper wrapper_decorate">
 				<header class="header header_page">
 					<nav class="menu menu_top menu_justify">
 						<a class="menu__item" href="/page/kontakty.html" title="Контакты" >Контакты</a>
@@ -129,7 +123,7 @@ php@
 								<div class="profile profile_flex">
 									<div class="header-section header-section_theme_none header-section_float header-section_oneof_3">
 										<div class="profile-blank">
-											<a href="/newprice/" title="Товары со скидкой"  class="profile-blank__link profile-blank__link_img">
+											<a href="/newprice/" title="Товары со скидкой" class="profile-blank__link profile-blank__link_img">
 												<span class="icon icon-discount"></span><br>
 												<span class="profile-blank__link">Товары<br>со скидкой</span>
 											</a>
@@ -217,128 +211,129 @@ php@
 					<aside class="general__area general__area_shadow">
 						@specMain@
 					</aside>
+					<header class="general__separator">
+						<span class="separator">
+							<h2 class="separator__title">Информация</h2>
+							<a href="/news/" title="Новости" class="separator__link">Новости</a>
+						</span>
+					</header>
+					<main class="general__area general__area_shadow">
+						<div class="flash">
+							<script type="text/javascript">
+								AC_FL_RunContent( 'width','940','height','94','codebase','http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=5,0,0,0','src','/UserFiles/Image/Dop/top','quality','high','pluginspage','http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash','movie','/UserFiles/Image/Dop/top' ); //end AC code
+							</script>
+							<noscript>
+								<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="940" height="94" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=5,0,0,0"><param name="movie" value="/UserFiles/Image/Dop/top.swf"><param name="quality" value="high"><embed type="application/x-shockwave-flash" width="940" height="94" src="/UserFiles/Image/Dop/top.swf" quality="high" pluginspage="http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash">
+								</object>
+							</noscript>
+						</div>
+						<div class="usercontent">
+							@mainContent@
+						</div>
+					</main>
 				</section>
 			</div>
 		</div>
 		<footer class="page__footer">
-			
+			<div class="wrapper">
+				<nav class="menu menu_footer">
+					<a class="menu__item" href="/page/o-magazine.html" title="О магазине">О магазине</a>  &#9642; 
+					<a class="menu__item" href="/map/" title="Карта сайта">Карта сайта</a>  &#9642; 
+					<a class="menu__item" href="/page/kontakty.html" title="Контакты">Контакты</a>  &#9642; 
+					<a class="menu__item" href="/page/sertifikat.html" title="Сертификаты">Сертификаты</a>  &#9642; 
+					<a class="menu__item" href="/page/leander-optom.html" title="Посуда Оптом">Посуда Оптом</a>
+				</nav>
+				<div class="externals">
+					<a href="http://vk.com/profserviz_ru" target="_blank">
+						<img src="images/files/vk-profserviz_ru.png" alt="Вконтакте">
+					</a>
+					<a href="https://twitter.com/Profserviz" target="_blank">
+						<img src="images/files/tw-profserviz_ru.png" alt="Твиттер">
+					</a>
+					<a href="https://www.facebook.com/profserviz.ru" target="_blank">
+						<img src="images/files/fb-profserviz_ru.png" alt="Фейсбук">
+					</a>
+					<a href="http://ok.ru/profserviz.ru" target="_blank">
+						<img src="images/files/ok-profserviz_ru.png" alt="Одноклассники">
+					</a>
+					<a href="https://plus.google.com/+ProfservizRu2008" target="_blank">
+						<img src="images/files/gp-profserviz_ru.png" alt="Google+">
+					</a>
+					<a href="http://youtube.com/c/ProfservizRu2008" target="_blank">
+						<img src="images/files/yt-profserviz_ru.png" alt="YouTube">
+					</a>
+					<img src="images/files/market-profserviz_ru.png" alt="Отзывы в Маркете">
+					<a href="https://market.yandex.ru/shop/146808/reviews" target="_blank">
+						<img src="/UserFiles/Image/Dop/market.jpg" border="0" width="68" height="24" alt="Читайте отзывы покупателей и оценивайте качество магазина на Яндекс.Маркете">
+					</a>
+					<img src="images/files/karti-profserviz_ru.png" alt="Мы принимаем карты">
+					<img src="images/files/visa.jpg" alt="Visa">
+					<img src="images/files/mastercard.jpg" alt="Mastercard">
+					<img src="images/files/maestro.jpg" alt="Maestro">
+				</div>
+				<div class="copyright">
+					<p>Все материалы являются собственностью, любое использование разрешено, с согласия автора. <a class="copyright__link" href="/page/privacypolicy.html" title="Политика Конфиденциальности" target="_blank">Политика Конфиденциальности</a>, <a class="copyright__link" href="/page/dogovor-oferta.html" title="Договор-оферта" target="_blank">Договор-оферта</a></p>
+					<p><a href="/" title="Посуда из Чехии">Посуда из Чехии</a> 8(495)789-5221 <a class="copyright__link" href="mailto:sale@profserviz.ru"><img src="images/mm_mail.gif" alt="sale@profserviz.ru" width="11" height="11" border="0"></a> © Profserviz.ru, 2008-@php $a = getdate(); echo $a['year']; php@</p>
+				</div>
+			</div>
 		</footer>
 	</div>
 	<script language="Javascript" type="text/javascript" src="@php echo $GLOBALS['SysValue']['dir']['templates'].chr(47).$_SESSION['skin'].chr(47); php@javascript/production.js"></script>
+	<script type="application/ld+json">
+		{
+			"@context" : "http://schema.org",
+			"@type" : "Organization",
+			"name" : "ООО Чешский хрусталь",
+			"telephone" : [ "+7 (495)789-5221", "+7 (903)589-5221" ],
+			"email" : "sale@profserviz.ru",
+			"address" : {
+			 "@type" : "PostalAddress",
+			 "streetAddress" : "2-й Котляковский пер., д.1 стр.1",
+			 "addressLocality" : "г. Москва",
+			 "postalCode" : "115201"
+			},
+			"url" : "http://profserviz.ru/"
+		}
+	</script>
+	<!--LiveInternet counter-->
+	<script type="text/javascript">
+	<!--
+		document.write("<a href='http://www.liveinternet.ru/click' "+
+		"target=_blank><img src='//counter.yadro.ru/hit?t12.1;r"+
+		escape(document.referrer)+((typeof(screen)=="undefined")?"":
+		";s"+screen.width+"*"+screen.height+"*"+(screen.colorDepth?
+		screen.colorDepth:screen.pixelDepth))+";u"+escape(document.URL)+
+		";"+Math.random()+
+		"' alt='' title='LiveInternet: показано число просмотров за 24"+
+		" часа, посетителей за 24 часа и за сегодня' "+
+		"border='0' width='2' height='2'>")
+	//-->
+	</script>
+	<!--/LiveInternet-->
+	<!-- Yandex.Metrika counter -->
+	<script type="text/javascript">
+		(function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter21410194 = new Ya.Metrika({id:21410194, webvisor:true, clickmap:true, tracklinks:true, accurateTrackBounce:true}); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks");
+	</script>
+	<noscript>
+		<div><img src="//mc.yandex.ru/watch/21410194" style="position:absolute; left:-9999px;" alt=""></div>
+	</noscript>
+	<!-- /Yandex.Metrika counter -->
 
-				
-		<div id="content" style="margin-top: 1300px;">
-			
-				<div class="box-title">
-					 <h2>Информация</h2><a href="/news/" title="Новости">Новости</a>
-				</div>
-				<div class="box-content-shadow">
-	 <div align="center">
-		  <script type="text/javascript">
-		AC_FL_RunContent( 'width','940','height','94','codebase','http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=5,0,0,0','src','/UserFiles/Image/Dop/top','quality','high','pluginspage','http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash','movie','/UserFiles/Image/Dop/top' ); //end AC code
-		</script>
-		<noscript>
-			<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="940" height="94" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=5,0,0,0"><param name="movie" value="/UserFiles/Image/Dop/top.swf"><param name="quality" value="high"><embed type="application/x-shockwave-flash" width="940" height="94" src="/UserFiles/Image/Dop/top.swf" quality="high" pluginspage="http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash">
-			</object>
-		</noscript>
-</div>
-					<div id="maincont" class="clearfix">@mainContent@</div>
-			</div>
-		</div>
-		<div id="footer">
-			<div class="footer-menu">
-				<a href="/page/o-magazine.html" title="О магазине">О магазине</a>  &#9642; 
-				<a href="/map/" title="Карта сайта">Карта сайта</a>  &#9642; 
-					 <a href="/page/kontakty.html" title="Контакты">Контакты</a>  &#9642; 
-				<a href="/page/sertifikat.html" title="Сертификаты">Сертификаты</a>  &#9642; 
-					 <a href="/page/leander-optom.html" title="Посуда Оптом">Посуда Оптом</a>
-			</div>
-			<div class="footer-bottom clearfix">
-										  <div align="center">Все материалы являются собственностью, любое использование разрешено, с согласия автора. <a href="/page/privacypolicy.html" title="Политика Конфиденциальности" target="_blank">Политика Конфиденциальности</a>, <a href="/page/dogovor-oferta.html" title="Договор-оферта" target="_blank">Договор-оферта</a>
-								</div>
-										  <p></p>
-				  <div align="center"><a href="/" title="Посуда из Чехии">Посуда из Чехии</a> 8(495)789-5221 <a href="mailto:sale@profserviz.ru"><img src="images/mm_mail.gif" alt="sale@profserviz.ru" width="11" height="11" border="0"></a> © Profserviz.ru, 2008-<script type="text/javascript">
+	<!-- Google Analytics counter -->
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-dt = new Date();
-
-document.write(dt.getFullYear());</script></div>
-
-</div><!-- end #footer -->
-
-</div><!-- end #wrapp --><!-- Разметка JSON-LD, созданная Мастером разметки структурированных данных Google. -->
-
-<script type="application/ld+json">
-{
-  "@context" : "http://schema.org",
-  "@type" : "Organization",
-  "name" : "ООО Чешский хрусталь",
-  "telephone" : [ "+7 (495)789-5221", "+7 (903)589-5221" ],
-  "email" : "sale@profserviz.ru",
-  "address" : {
-	 "@type" : "PostalAddress",
-	 "streetAddress" : "2-й Котляковский пер., д.1 стр.1",
-	 "addressLocality" : "г. Москва",
-	 "postalCode" : "115201"
-  },
-  "url" : "http://profserviz.ru/"
-}
-</script>
-				<div class="footer-bottom-box-payment fr">
-					 
-
-						 <!--noindex-->
-					<a href="http://vk.com/profserviz_ru" target="_blank"><img src="images/files/vk-profserviz_ru.png" alt="Вконтакте"></a>
-						 <a href="https://market.yandex.ru/shop/146808/reviews" target="_blank"><img src="/UserFiles/Image/Dop/market.jpg" border="0" width="68" height="24" alt="Читайте отзывы покупателей и оценивайте качество магазина на Яндекс.Маркете"></a>
-						 <!--/noindex-->					 
-						  <img src="images/files/visa.jpg" alt="Visa">
-					<img src="images/files/mastercard.jpg" alt="Mastercard">
-					<img src="images/files/maestro.jpg" alt="Maestro">				</div>
-
+		ga('create', 'UA-55866924-1', 'auto');
+		ga('send', 'pageview');
+	</script>
+	<!-- /Google Analytics counter -->
+	<script type="text/javascript" src="java/scripts.js"></script>
+	<div id="cartwindow" class="message">
+		 <div class="message__content"><b>Внимание...</b><br>Товар добавлен в корзину</div>
 	</div>
-</div>
-<!--LiveInternet counter-->
-<script type="text/javascript">
-<!--
-document.write("<a href='http://www.liveinternet.ru/click' "+
-"target=_blank><img src='//counter.yadro.ru/hit?t12.1;r"+
-escape(document.referrer)+((typeof(screen)=="undefined")?"":
-";s"+screen.width+"*"+screen.height+"*"+(screen.colorDepth?
-screen.colorDepth:screen.pixelDepth))+";u"+escape(document.URL)+
-";"+Math.random()+
-"' alt='' title='LiveInternet: показано число просмотров за 24"+
-" часа, посетителей за 24 часа и за сегодня' "+
-"border='0' width='2' height='2'>")
-//-->
-</script>
-<!--/LiveInternet-->
-
-<!-- Yandex.Metrika counter -->
-<script type="text/javascript">
-	(function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter21410194 = new Ya.Metrika({id:21410194, webvisor:true, clickmap:true, tracklinks:true, accurateTrackBounce:true}); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks");
-</script>
-<noscript>
-	<div><img src="//mc.yandex.ru/watch/21410194" style="position:absolute; left:-9999px;" alt=""></div>
-</noscript>
-<!-- /Yandex.Metrika counter -->
-
-<!-- Google Analytics counter -->
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-55866924-1', 'auto');
-  ga('send', 'pageview');
-</script>
-<!-- /Google Analytics counter -->
-
-<div style="clear:both"></div>
-<div id="cartwindow" class="message">
-	 <div class="ico_add_to_card"><b>Внимание...</b><br>Товар добавлен в корзину</div>
-</div>
-<div id="comparewindow" class="message">
-	 <div class="ico_add_to_compare"><b>Внимание...</b><br>Товар добавлен в сравнение</div>
-</div>
-<script type="text/javascript" src="java/scripts.js"></script>
-
+	<div id="comparewindow" class="message">
+		 <div class="message__content"><b>Внимание...</b><br>Товар добавлен в сравнение</div>
+	</div>

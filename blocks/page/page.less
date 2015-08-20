@@ -1,18 +1,27 @@
+@import '../_framework/var';
 .reset-indent(){
 	margin: 0;
 	padding: 0;
 }
 
-html,
-body,
+html{
+	.reset-indent();
+}
 .page {
 	.reset-indent();
 	height: 100%;
 }
 
-.page {
+.bod{
+	.reset-indent();
 	background: rgb(148,214,226);
-	background: linear-gradient(to bottom, rgba(148,214,226,1) 0%,rgba(255,255,255,1) 100%);
+	background: linear-gradient(to bottom, rgba(148,214,226,1) 10%,rgba(255,255,255,1) 90%);
+	background-repeat: no-repeat;
+}
+
+.page {
+	// background: rgb(148,214,226);
+	// background: linear-gradient(to bottom, rgba(148,214,226,1) 0%,rgba(255,255,255,1) 100%);
 	font: normal .75em Arial, Tahoma, Helvetica, sans-serif;
 	&__content {
 		.reset-indent();
@@ -25,5 +34,10 @@ body,
 		.reset-indent();
 		height: 80px;
 		margin-top: -80px;
+		padding: @indent;
 	}
+}
+
+a img{
+	border: none;
 }

@@ -1,0 +1,17 @@
+// button fixed position for fast to-top navigetion
+@import '../_framework/var';
+.navigation-topbtn{
+	position: fixed;
+	bottom: 130px;
+	left: 15px;
+	z-index: 3000000;
+	background: linear-gradient(to bottom, rgba(251,251,251,1) 0%,rgba(216,216,216,1) 100%);
+	border-radius: 6px;
+	.box-shadow-box(.4);
+	&__link{
+		display: inline-block;
+		width: 36px;
+		height: 36px;
+		background: url(images/files/back-up-arrow.png) no-repeat center;
+	}
+}
