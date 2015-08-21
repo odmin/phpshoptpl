@@ -334,6 +334,12 @@
     text-align: center;
   }
 }
+@media only screen and (max-width: 1023px) {
+  .menu-cat__item {
+    width: 33.33333333%;
+    text-align: left;
+  }
+}
 .menu-cat-child {
   margin: 0;
   padding: 0;
