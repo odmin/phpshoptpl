@@ -11,6 +11,9 @@
 		@media @tabletpt{
 			padding: 10px;
 		}
+		@media @atphone{
+			padding: 10px 0;
+		}
 	}
 
 	&_top{
@@ -23,6 +26,9 @@
 				display: inline-block;
 				position: absolute;
 				left: 0;
+				@media @atphone{
+					display: none;
+				}
 			}
 			&:hover :before{
 				color: #FFF;
@@ -32,6 +38,15 @@
 				&:before{
 					display: none;
 				}
+			}
+			@media @atphone{
+				width: 50%;
+				float: left;
+				box-sizing: border-box;
+				text-align: left;
+				
+				font-size: 1.2em;
+				text-indent: 5px;
 			}
 		}
 	}
@@ -45,6 +60,9 @@
 		display: flex;
 		justify-content: space-between;
 		justify-content: center;
+		@media @atphone{
+			display: block;
+		}
 		.menu__item{
 			@media @gtetablet{
 				padding: 10px 23px;

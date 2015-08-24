@@ -91,12 +91,12 @@ php@
 						<a class="menu__item" href="/news/" title="Новости">Новости</a>
 					</nav>
 					<div class="grid grid_indent_sm">
-						<div class="grid__col1 grid__col_tablet2">
+						<div class="grid__col1 grid__col_tablet2 grid__col_phone3">
 							<a href="/" title="@name@" class="logo logo_top">
 								<img src="@logo@" alt="@name@" class="logo__img">
 							</a>
 						</div>
-						<div class="grid__col2 grid__col_tablet4">
+						<div class="grid__col2 grid__col_tablet4 grid__col_phone3">
 							<p class="text text_white">
 								@name@
 							</p>
@@ -104,8 +104,8 @@ php@
 								@w4aSmartSearch@
 							</div>
 						</div>
-						<div class="grid__col1 grid__col_tablet2">
-							<div class="header-section">
+						<div class="grid__col1 grid__col_tablet2 grid__col_phone3">
+							<div class="header-section header-section_theme_phonecenter">
 								<div class="text text_sm text_ital text_white">
 									<p class="text__line text__line_first">Заказы по телефону с 9 до 23<br>Через магазин Круглосуточно</p>
 									<p class="text__phone">
@@ -118,7 +118,7 @@ php@
 								</div>
 							</div>
 						</div>
-						<div class="grid__col1 grid__col_tablet2">
+						<div class="grid__col1 grid__col_tablet2 grid__col_phone3">
 							<div class="header-section">
 								<div class="profile profile_flex">
 									<div class="header-section header-section_theme_none header-section_float header-section_oneof_3">
@@ -175,7 +175,7 @@ php@
 							</a>
 						</div>
 						<div class="grid grid_indent_sm">
-							<div class="grid__col1 grid__col_tablet6">
+							<div class="grid__col1 grid__col_tablet6" id="bx-left">
 								@leftMenu@
 							</div>
 							<div class="grid__col3 grid__col_tablet6">

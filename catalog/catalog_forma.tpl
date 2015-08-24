@@ -3,6 +3,7 @@
 		@catalogName@
 	</a>
 	<ul class="menu-cat-child">
+		<li><btn class="menu-cat-child__close">&times;</btn></li>
 		@catalogPodcatalog@
 	</ul>
 </li>

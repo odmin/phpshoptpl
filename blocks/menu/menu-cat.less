@@ -8,6 +8,9 @@
 
 	width: 100%;
 	display: table;
+	@media @notdesktop{
+		position: relative;
+	}
 	
 	&__parent{
 		.menu-link();
@@ -30,8 +33,10 @@
 			text-align: center;
 		}
 		@media @notdesktop{
-			width: 100% /3;
+			width: 100% /2;
 			text-align: left;
+			display: block;
+			position: static;
 		}
 
 	}
@@ -55,6 +60,14 @@
 	@media @tabletls{
 		width: 200px;
 		text-align: center;
+	}
+	@media @notdesktop{
+		// position: relative;
+		position: absolute;
+		right: 0;
+		left: auto;
+		top: 0;
+		width: 100% /2;
 	}
 
 	&__link{
@@ -107,6 +120,10 @@
 				left: auto;
 				right: 0;
 			}
+			@media @notdesktop{
+				left: auto;
+				right: 0;
+			}
 		}
 	}
 	&:nth-child(1){
@@ -114,6 +131,10 @@
 			@media @tabletls{
 				left: 0;
 				right: auto;
+			}
+			@media @notdesktop{
+				left: auto;
+				right: 0;
 			}
 		}
 	}

@@ -3,7 +3,9 @@
 .header-section{
 	border-left: 1px solid @color-eastern-blue;
 	min-height: @logo-height;
-	
+	@media @atphone{
+		font-size: 1.2em;
+	}
 	&_sm{
 		min-height: 1px;
 	}
@@ -20,6 +22,12 @@
 	&_theme_none{
 		border: none;
 		min-height: 1px;
+	}
+
+	&_theme_phonecenter{
+		@media @atphone{
+			text-align: center;
+		}
 	}
 
 }

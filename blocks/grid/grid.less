@@ -2,6 +2,7 @@
 
 .generate-grid(5);
 .generate-grid-tablet(6);
+.generate-grid-phone(3);
 
 .generate-grid(@n, @i: 1) when (@i =< @n) {
 	.grid__col@{i} {
@@ -21,12 +22,27 @@
 	}
 	.generate-grid-tablet(@n, (@i + 1));
 }
+.generate-grid-phone(@n, @i: 1) when (@i =< @n) {
+	.grid__col_phone@{i} {
+		@media @atphone{
+			float: left;
+			box-sizing: border-box;
+			width: (@i * 100% / @n);
+		}
+	}
+	.generate-grid-phone(@n, (@i + 1));
+}
 .grid{
 	float: left;
 	width: 100%;
 	&_indent_sm{
 		padding: 12px 0 14px;
 	}
+}
+.grid__col_phone50ps{
+	float: left;
+	width: 50%;
+	box-sizing: border-box;
 }
 .cb{
 	clear: both;
