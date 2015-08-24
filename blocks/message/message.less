@@ -1,3 +1,27 @@
+@import '../_framework/var';
 .message{
-	display: none;
+	border: solid 1px #EFD39C;
+	border-radius: 8px 8px 0 0;
+	background: linear-gradient(rgb(255,236,157),rgb(255,231,133));
+	position: fixed;
+	max-width: 230px;
+	height: 35px;
+	padding: 15px 10px 10px 10px;
+	visibility: hidden;
+	right: 10px;
+	bottom: 0;
+	box-shadow: 0.4em 0.4em 5px rgba(122,122,122,0.5);
+	z-index: 200000;
+	font: normal 12px @font;
+	&__content{
+		text-align: left;
+		padding-left: 45px;
+		min-height: 32px;
+		&_cart{
+			background: url(images/shop/basket.png) no-repeat;
+		}
+		&_compare{
+			background: url(images/shop/compare.png) no-repeat;
+		}
+	}
 }

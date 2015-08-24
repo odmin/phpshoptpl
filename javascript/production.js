@@ -32,6 +32,3 @@ $('#toggle-menu_top').on('click', function () {
 	$(this).toggleClass('open');
 	$(this).parent().find('.menu_top').toggleClass('open');
 });
-$('#menu-cat__close').on('click', function () {
-	$(this).parent().toggleClass('hide');
-});

@@ -676,7 +676,31 @@
 }
 
 .message {
-  display: none;
+  border: solid 1px #EFD39C;
+  border-radius: 8px 8px 0 0;
+  background: -webkit-linear-gradient(#ffec9d, #ffe785);
+  background: linear-gradient(#ffec9d, #ffe785);
+  position: fixed;
+  max-width: 230px;
+  height: 35px;
+  padding: 15px 10px 10px 10px;
+  visibility: hidden;
+  right: 10px;
+  bottom: 0;
+  box-shadow: 0.4em 0.4em 5px rgba(122, 122, 122, 0.5);
+  z-index: 200000;
+  font: normal 12px Arial, Tahoma, Helvetica, sans-serif;
+}
+.message__content {
+  text-align: left;
+  padding-left: 45px;
+  min-height: 32px;
+}
+.message__content_cart {
+  background: url(images/shop/basket.png) no-repeat;
+}
+.message__content_compare {
+  background: url(images/shop/compare.png) no-repeat;
 }
 
 .navigation-topbtn {

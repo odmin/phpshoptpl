@@ -315,7 +315,7 @@ php@
 		";"+Math.random()+
 		"' alt='' title='LiveInternet: показано число просмотров за 24"+
 		" часа, посетителей за 24 часа и за сегодня' "+
-		"border='0' width='2' height='2'>")
+		"border='0' width='2' height='2'></a>")
 	//-->
 	</script>
 	<!--/LiveInternet-->
@@ -341,8 +341,8 @@ php@
 	<!-- /Google Analytics counter -->
 	<script type="text/javascript" src="java/scripts.js"></script>
 	<div id="cartwindow" class="message">
-		 <div class="message__content"><b>Внимание...</b><br>Товар добавлен в корзину</div>
+		 <div class="message__content message__content_cart"><b>Внимание...</b><br>Товар добавлен в корзину</div>
 	</div>
 	<div id="comparewindow" class="message">
-		 <div class="message__content"><b>Внимание...</b><br>Товар добавлен в сравнение</div>
+		 <div class="message__content message__content_compare"><b>Внимание...</b><br>Товар добавлен в сравнение</div>
 	</div>
