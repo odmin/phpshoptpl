@@ -79,6 +79,7 @@ php@
 		<div class="page__content">
 			<div class="wrapper wrapper_decorate">
 				<header class="header header_page">
+					<button class="button button_menu" id="toggle-menu_top">Меню</button>
 					<nav class="menu menu_top menu_justify">
 						<a class="menu__item" href="/page/kontakty.html" title="Контакты" >Контакты</a>
 						<a class="menu__item" href="/page/dostavka_i_oplata.html" title="Доставка и Оплата">Доставка и Оплата</a>
@@ -175,10 +176,10 @@ php@
 							</a>
 						</div>
 						<div class="grid grid_indent_sm">
-							<div class="grid__col1 grid__col_tablet6" id="bx-left">
+							<div class="grid__col1 grid__col_tablet6 grid__col_phone3" id="bx-left">
 								@leftMenu@
 							</div>
-							<div class="grid__col3 grid__col_tablet6">
+							<div class="grid__col3 grid__col_tablet6 grid__col_phone3">
 								<div class="centermenu">
 									<div class="banner banner_full">
 										<div class="bxslider">
@@ -187,7 +188,7 @@ php@
 									</div>
 								</div>
 							</div>
-							<div class="grid__col1 grid__col_tablet6">
+							<div class="grid__col1 grid__col_tablet6 grid__col_phone3">
 								@rightMenu@
 							</div>
 						</div>

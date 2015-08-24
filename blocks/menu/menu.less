@@ -18,6 +18,12 @@
 
 	&_top{
 		border-bottom: 1px solid @color-eastern-blue;
+		@media @atphone{
+			display: none;
+			&.open{
+				display: block;
+			}
+		}
 		.menu__item{
 			position: relative;
 			text-align: center;
@@ -61,7 +67,8 @@
 		justify-content: space-between;
 		justify-content: center;
 		@media @atphone{
-			display: block;
+			display: none;
+			float: left;
 		}
 		.menu__item{
 			@media @gtetablet{

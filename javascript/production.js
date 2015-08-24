@@ -28,3 +28,7 @@ $(window).bind('load', function(){
 			})
 	}
   })
+$('#toggle-menu_top').on('click', function () {
+	$(this).toggleClass('open');
+	$(this).parent().find('.menu_top').toggleClass('open');
+})

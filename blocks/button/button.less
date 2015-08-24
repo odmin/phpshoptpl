@@ -13,4 +13,35 @@
 		background: @color-green-blue;
 		margin: 5px;
 	}
+	&_menu{
+		width: 100%;
+		padding: 10px 0;
+		
+		background: @color-gold;
+		font-size: 1.2em;
+		font-weight: bold;
+		
+		position: relative;
+		
+		display: none;
+
+		@media @atphone{
+			display: block;
+		}
+
+		&:after{
+			content: "";
+			border: 5px solid transparent;
+			border-top: 5px solid @color-eastern-blue;
+			position: relative;
+			display: inline-block;
+			vertical-align: middle;
+			right: -20px;
+		}
+
+		&.open:after{
+			border-bottom: 5px solid @color-eastern-blue;
+			border-top: none;
+		}
+	}
 }

@@ -4,6 +4,9 @@
 	&__area{
 		padding: @indent;
 		display: block;
+		@media @atphone{
+			padding: 5px;
+		}
 		&_shadow{
 			.box-shadow-top-inset(.3);
 		}

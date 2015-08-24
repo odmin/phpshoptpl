@@ -83,6 +83,33 @@
   background: #05677a;
   margin: 5px;
 }
+.button_menu {
+  width: 100%;
+  padding: 10px 0;
+  background: #ffd203;
+  font-size: 1.2em;
+  font-weight: bold;
+  position: relative;
+  display: none;
+}
+@media only screen and (max-width: 767px) {
+  .button_menu {
+    display: block;
+  }
+}
+.button_menu:after {
+  content: "";
+  border: 5px solid transparent;
+  border-top: 5px solid #17899e;
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  right: -20px;
+}
+.button_menu.open:after {
+  border-bottom: 5px solid #17899e;
+  border-top: none;
+}
 
 .centermenu {
   margin: 25px auto 30px;
@@ -100,6 +127,14 @@
     -webkit-align-items: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .centermenu {
+    width: 300px;
+  }
+  .centermenu img {
+    height: auto;
   }
 }
 .centermenu .bx-controls {
@@ -147,11 +182,21 @@
 .flash embed {
   max-width: 100%;
 }
+@media only screen and (max-width: 1023px) {
+  .flash {
+    display: none;
+  }
+}
 
 
 .general__area {
   padding: 30px;
   display: block;
+}
+@media only screen and (max-width: 767px) {
+  .general__area {
+    padding: 5px;
+  }
 }
 .general__area_shadow {
   box-shadow: inset 0px 7px 5px -1px rgba(50, 50, 50, 0.3);
@@ -507,6 +552,14 @@
 .menu_top {
   border-bottom: 1px solid #17899e;
 }
+@media only screen and (max-width: 767px) {
+  .menu_top {
+    display: none;
+  }
+  .menu_top.open {
+    display: block;
+  }
+}
 .menu_top .menu__item {
   position: relative;
   text-align: center;
@@ -554,7 +607,8 @@
 }
 @media only screen and (max-width: 767px) {
   .menu_justify {
-    display: block;
+    display: none;
+    float: left;
   }
 }
 @media only screen and (min-width: 1023px) {
