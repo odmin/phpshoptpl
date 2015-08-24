@@ -1,9 +1,8 @@
 <li class="menu-cat__item" id="divCat@catalogId@">
-	<a href="#nav" title="" id="titCat@catalogId@" class="menu-cat__parent">
+	<a href="#divCat@catalogId@" title="" id="titCat@catalogId@" class="menu-cat__parent">
 		@catalogName@
 	</a>
-	<ul class="menu-cat-child">
-		<li><btn class="menu-cat-child__close">&times;</btn></li>
+	<ul class="menu-cat-child hide">
 		@catalogPodcatalog@
 	</ul>
 </li>

@@ -245,32 +245,40 @@ php@
 					<a class="menu__item" href="/page/leander-optom.html" title="Посуда Оптом">Посуда Оптом</a>
 				</nav>
 				<div class="externals">
-					<a href="http://vk.com/profserviz_ru" target="_blank">
-						<img src="images/files/vk-profserviz_ru.png" alt="Вконтакте">
-					</a>
-					<a href="https://twitter.com/Profserviz" target="_blank">
-						<img src="images/files/tw-profserviz_ru.png" alt="Твиттер">
-					</a>
-					<a href="https://www.facebook.com/profserviz.ru" target="_blank">
-						<img src="images/files/fb-profserviz_ru.png" alt="Фейсбук">
-					</a>
-					<a href="http://ok.ru/profserviz.ru" target="_blank">
-						<img src="images/files/ok-profserviz_ru.png" alt="Одноклассники">
-					</a>
-					<a href="https://plus.google.com/+ProfservizRu2008" target="_blank">
-						<img src="images/files/gp-profserviz_ru.png" alt="Google+">
-					</a>
-					<a href="http://youtube.com/c/ProfservizRu2008" target="_blank">
-						<img src="images/files/yt-profserviz_ru.png" alt="YouTube">
-					</a>
-					<img src="images/files/market-profserviz_ru.png" alt="Отзывы в Маркете">
-					<a href="https://market.yandex.ru/shop/146808/reviews" target="_blank">
-						<img src="/UserFiles/Image/Dop/market.jpg" border="0" width="68" height="24" alt="Читайте отзывы покупателей и оценивайте качество магазина на Яндекс.Маркете">
-					</a>
-					<img src="images/files/karti-profserviz_ru.png" alt="Мы принимаем карты">
-					<img src="images/files/visa.jpg" alt="Visa">
-					<img src="images/files/mastercard.jpg" alt="Mastercard">
-					<img src="images/files/maestro.jpg" alt="Maestro">
+					<span class="externals__row">
+						<a href="http://vk.com/profserviz_ru" target="_blank">
+							<img src="images/files/vk-profserviz_ru.png" alt="Вконтакте">
+						</a>
+					</span>
+					<span class="externals__row">
+						<a href="https://twitter.com/Profserviz" target="_blank">
+							<img src="images/files/tw-profserviz_ru.png" alt="Твиттер">
+						</a>
+						<a href="https://www.facebook.com/profserviz.ru" target="_blank">
+							<img src="images/files/fb-profserviz_ru.png" alt="Фейсбук">
+						</a>
+						<a href="http://ok.ru/profserviz.ru" target="_blank">
+							<img src="images/files/ok-profserviz_ru.png" alt="Одноклассники">
+						</a>
+						<a href="https://plus.google.com/+ProfservizRu2008" target="_blank">
+							<img src="images/files/gp-profserviz_ru.png" alt="Google+">
+						</a>
+						<a href="http://youtube.com/c/ProfservizRu2008" target="_blank">
+							<img src="images/files/yt-profserviz_ru.png" alt="YouTube">
+						</a>
+					</span>
+					<span class="externals__row">
+						<img src="images/files/market-profserviz_ru.png" alt="Отзывы в Маркете">
+						<a href="https://market.yandex.ru/shop/146808/reviews" target="_blank">
+							<img src="/UserFiles/Image/Dop/market.jpg" border="0" width="68" height="24" alt="Читайте отзывы покупателей и оценивайте качество магазина на Яндекс.Маркете">
+						</a>
+					</span>
+					<span class="externals__row">
+						<img src="images/files/karti-profserviz_ru.png" alt="Мы принимаем карты">
+						<img src="images/files/visa.jpg" alt="Visa">
+						<img src="images/files/mastercard.jpg" alt="Mastercard">
+						<img src="images/files/maestro.jpg" alt="Maestro">
+					</span>
 				</div>
 				<div class="copyright">
 					<p>Все материалы являются собственностью, любое использование разрешено, с согласия автора. <a class="copyright__link" href="/page/privacypolicy.html" title="Политика Конфиденциальности" target="_blank">Политика Конфиденциальности</a>, <a class="copyright__link" href="/page/dogovor-oferta.html" title="Договор-оферта" target="_blank">Договор-оферта</a></p>
