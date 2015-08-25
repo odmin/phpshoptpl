@@ -1,38 +1,48 @@
-<div class="box-content-shadow">
-    
-	<div class="page_nava"><div> @breadCrumbs@ </div></div>
-
-	<h1>@catalogCategory@</h1>
 @php
-if(empty($_GET)) {
-echo "<div class='content-top'>@catalogContentTop@</div>";
-}
+// Шаблон страницы категории
 php@
-	<NOINDEX>
+<div class="box-shop">
 
-	  <form method="post" action="/shop/CID_@productId@.html" name="sort">
+	<div class="breadcrumbs">
+		@breadCrumbs@
+	</div>
 
-		<div class="clearfix" style="border-bottom:1px solid #ebebeb;padding:0 0 10px;">
+	<h1 class="box-shop__title">@catalogCategory@</h1>
 
-		<div class="fl" style="width:55%">
+	@php
+		if(empty($_GET)) {
+			echo "<div class='content-top usercontent'>@catalogContentTop@</div>";
+		}
+	php@
+	<noindex>
 
-			<table border="0" cellspacing="0" cellpadding="0" class="vendorDisp">
+		<form method="post" action="/shop/CID_@productId@.html" name="sort">
+			<div class="shop-sort">
+				<table border="0" cellspacing="0" cellpadding="0" class="vendorDisp shop-sort__table">
+					<tr>
+						@vendorDisp@
+						<td>@vendorSelectDisp@</td>
+					</tr>
+				</table>
+			</div>
+			<div class="divSortPageList shop-sort shop-sort_order">
+				<strong>Сортировать по:</strong>&nbsp;&nbsp;&nbsp;&nbsp; Наименованию ( 
+					<span class="spanSortPageList">
+						<a class="shop-sort__link" href="./CID_@productId@_@productPageThis@.html?@productVendor@&f=1&amp;s=1">возр</a> / 
+						<a class="shop-sort__link" href="./CID_@productId@_@productPageThis@.html?@productVendor@&f=2&amp;s=1">убыв</a>
+					</span> 
+				)&nbsp;&nbsp;&nbsp;&nbsp; Цене ( 
+					<span class="spanSortPageList">
+						<a class="shop-sort__link" href="./CID_@productId@_@productPageThis@.html?@productVendor@&f=1&amp;s=2">возр</a> / 
+						<a class="shop-sort__link" href="./CID_@productId@_@productPageThis@.html?@productVendor@&f=2&amp;s=2">убыв</a>
+					</span> 
+				)
+			</div>
+		</form>
 
-			  <tr> @vendorDisp@ <td>@vendorSelectDisp@</td></tr>
+	</noindex>
 
-			</table>
-
-		</div>
-
-		<div class="divSortPageList fr">Сортировать по:&nbsp;&nbsp;&nbsp;&nbsp; Наименованию ( <span class="spanSortPageList"><a href="./CID_@productId@_@productPageThis@.html?@productVendor@&f=1&amp;s=1">возр</a> / <a href="./CID_@productId@_@productPageThis@.html?@productVendor@&f=2&amp;s=1">убыв</a></span> )&nbsp;&nbsp;&nbsp;&nbsp; Цене ( <span class="spanSortPageList"><a href="./CID_@productId@_@productPageThis@.html?@productVendor@&f=1&amp;s=2">возр</a> / <a href="./CID_@productId@_@productPageThis@.html?@productVendor@&f=2&amp;s=2">убыв</a></span> )</div>
-
-		</div>
-
-	  </form>
-
-	</NOINDEX>
-
-	<div style="margin-top:20px">
+	<div>
 
 	  <table cellpadding="0" cellspacing="0" border="0" width="100%">
 
@@ -44,9 +54,9 @@ php@
 
 </div>
 
-<div class="navi">@productPageNav@</div>
+<div class="product-pagenav">@productPageNav@</div>
 @php
-if(empty($_GET)) {
-echo "<div class='box-content'><div class='box-content'>@catalogContent@</div></div>";
-}
+	if(empty($_GET)) {
+		echo "<div class='box-content'><div class='box-content usercontent'>@catalogContent@</div></div>";
+	}
 php@

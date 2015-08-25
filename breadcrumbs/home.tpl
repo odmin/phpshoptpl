@@ -1,1 +1,1 @@
-<A class="link" href="/">Главная</A>
+<a class="breadcrumbs__link breadcrumbs__link_main" href="/">Главная</a>

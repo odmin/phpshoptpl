@@ -13,4 +13,24 @@
 		
 		font-size: 23px;
 	}
+	&__old{
+		position: relative;
+		color: @color-grey;
+		float: left;
+		font-size: 18px;
+		padding-top: 5px;
+		&:before{
+			display: inline-block;
+			content: "";
+			width: 100%;
+			height: 2px;
+			background: @color-purple-pink;
+			position: absolute;
+			left: 0;
+			top: 50%;
+		}
+		strike{
+			text-decoration: none;
+		}
+	}
 }
