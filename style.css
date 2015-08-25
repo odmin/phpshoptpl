@@ -180,6 +180,9 @@
     width: 100%;
   }
 }
+.externals__link {
+  display: inline-block;
+}
 
 .flash {
   width: 100%;
@@ -678,6 +681,7 @@
 .message {
   border: solid 1px #EFD39C;
   border-radius: 8px 8px 0 0;
+  background: #ffec9d;
   background: -webkit-linear-gradient(#ffec9d, #ffe785);
   background: linear-gradient(#ffec9d, #ffe785);
   position: fixed;
@@ -1161,6 +1165,11 @@ a img {
 }
 .search_fast_result {
   right: 0 !important;
+}
+@media only screen and (max-width: 767px) {
+  .search_fast_result {
+    width: 290px !important;
+  }
 }
 .sfr_content > ul {
   padding: 0;
