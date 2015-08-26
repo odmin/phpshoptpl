@@ -507,6 +507,8 @@
   color: #1c1c1c;
   white-space: nowrap;
   display: inline-block;
+  width: 100%;
+  box-sizing: border-box;
   padding: 11px 3px;
 }
 @media only screen and (max-width: 767px) {
