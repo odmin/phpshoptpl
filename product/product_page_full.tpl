@@ -1,8 +1,12 @@
-<div class="box-content-shadow">
-    
-	<div class="page_nava">
+@php
+// Шаблон страницы продукта
+php@
+<div class="box-shop">
 
-	  <div><a href="javascript:history.back(1);" class=link><img src="images/shop/vernutsya.png" border="0" align="absmiddle" name="myimage" id="myimage" onMouseOver="document.all('myimage').src='images/shop/vernutsya-2.png'" onMouseOut="document.all('myimage').src='images/shop/vernutsya.png'"></a> @breadCrumbs@ </div>
+	<div class="breadcrumbs">
+
+	<a href="javascript:history.back(1);" class="breadcrumbs__back">Вернуться</a>
+	@breadCrumbs@
 
 	</div>
 
@@ -10,7 +14,4 @@
 
 </div>
 
-
-
 <div class="inShopTip"> @odnotipDisp@ </div>
-

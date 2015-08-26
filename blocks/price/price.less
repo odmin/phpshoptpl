@@ -16,7 +16,7 @@
 	&__old{
 		position: relative;
 		color: @color-grey;
-		float: left;
+		display: inline-block;
 		font-size: 18px;
 		padding-top: 5px;
 		&:before{
@@ -31,6 +31,12 @@
 		}
 		strike{
 			text-decoration: none;
+		}
+	}
+	&_theme_incard{
+		padding: 5px;
+		.price__actual{
+			font-weight: bold;
 		}
 	}
 }
