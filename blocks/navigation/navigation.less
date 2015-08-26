@@ -2,14 +2,18 @@
 
 .navigation{
 	display: block;
-	background: @color-gold;
-	color: @color-black-lead;
 	text-align: center;
-	.box-shadow-top-inset(.5);
 	
 	&_top{
+		.box-shadow-top-inset(.5);
+		background: @color-gold;
+		color: @color-black-lead;
 		width: 100%;
 		font-size: 14px;
+	}
+
+	&_bottom{
+		padding: 30px 0;
 	}
 
 	@media @tabletls{

@@ -6,4 +6,15 @@
 		font: bold 2em @font;
 		font-style: italic;
 	}
+	&__catalog{
+		& > table{ //backend helper
+			width: 100%;
+				tr{
+					@media @notdesktop{
+						display: block;
+						width: 100%;
+					}
+				}
+		}
+	}
 }

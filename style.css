@@ -741,14 +741,17 @@
 
 .navigation {
   display: block;
-  background: #ffd203;
-  color: #1c1c1c;
   text-align: center;
-  box-shadow: inset 0px 7px 5px -1px rgba(50, 50, 50, 0.5);
 }
 .navigation_top {
+  box-shadow: inset 0px 7px 5px -1px rgba(50, 50, 50, 0.5);
+  background: #ffd203;
+  color: #1c1c1c;
   width: 100%;
   font-size: 14px;
+}
+.navigation_bottom {
+  padding: 30px 0;
 }
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   .navigation {
@@ -798,6 +801,40 @@ html {
 }
 a img {
   border: none;
+}
+
+.pagination {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+}
+.pagination__item {
+  display: inline-block;
+  margin: 0;
+  margin-left: -1px;
+}
+.pagination__link {
+  display: block;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  padding: 6px 10px;
+  text-decoration: none;
+  color: #000000;
+}
+.pagination__link:hover {
+  background: #ffd203;
+}
+.pagination__link.active {
+  background: #ffd203;
+}
+.pagination__nolink {
+  display: block;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  padding: 6px 10px;
+  text-decoration: none;
+  color: #555555;
 }
 
 .price__actual {
@@ -1226,6 +1263,15 @@ a img {
   text-transform: uppercase;
   font: bold 2em Arial, Tahoma, Helvetica, sans-serif;
   font-style: italic;
+}
+.box-shop__catalog > table {
+  width: 100%;
+}
+@media only screen and (max-width: 1023px) {
+  .box-shop__catalog > table tr {
+    display: block;
+    width: 100%;
+  }
 }
 
 .shop-sort {

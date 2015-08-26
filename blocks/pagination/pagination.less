@@ -1,0 +1,41 @@
+@import '../_framework/var';
+
+// Use states:
+// active - current page
+// prev - step to back
+// next - stop to forvard
+// look php function w4a_setPaginator() into php/hook/cell.hook.php
+
+.button-css(){
+	display: block;
+	font-size: 14px;
+	border: 1px solid #ccc;
+	padding: 6px 10px;
+	text-decoration: none;
+}
+.pagination{
+	.reset-list();
+	text-align: center;
+	.prev{
+		
+	}
+	&__item{
+		display: inline-block;
+		margin: 0;
+		margin-left: -1px;
+	}
+	&__link{
+		.button-css();
+		color: @color-black;
+		&:hover{
+			background: @color-gold;
+		}
+		&.active{ // state
+			background: @color-gold;
+		}
+	}
+	&__nolink{
+		.button-css();
+		color: @color-text;
+	}
+}

@@ -41,20 +41,17 @@ php@
 		</form>
 
 	</noindex>
+	<div class="box-shop__catalog">
+		<table cellpadding="0" cellspacing="0" border="0" width="100%">
 
-	<div>
+			@productPageDis@
 
-	  <table cellpadding="0" cellspacing="0" border="0" width="100%">
-
-		@productPageDis@
-
-	  </table>
-
+		</table>
 	</div>
 
 </div>
 
-<div class="product-pagenav">@productPageNav@</div>
+<div class="navigation navigation_bottom">@productPageNav@</div>
 @php
 	if(empty($_GET)) {
 		echo "<div class='box-content'><div class='box-content usercontent'>@catalogContent@</div></div>";
