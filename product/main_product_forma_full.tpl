@@ -67,28 +67,32 @@ function getBrowserInfo() {
 						<div class="product-info__status">@productSklad@</div>
 					<div class="product-info-box-order-box-art">Код: @productUid@</div>
 				</div>
-				<div class="tovarDivAdd1">
+				<div class="tovarDivAdd1 product-info__cart">
 					<div class="tovarDivAdd3">
 						@ComStartCart@
-						<A href="javascript:AddToCartNum(@productUid@,'n@productUid@')" title="Купить @productName@" class="btn-prod"><span class="btn-l"><span class="btn-r btn-prod-content">Добавить в корзину</span></span></A>
+						<a href="javascript:AddToCartNum(@productUid@,'n@productUid@')" title="Купить @productName@" class="button button_buy button_big">
+						Добавить в корзину</a>
 						@ComEndCart@
-						@ComStartNotice@<a href="/users/notice.html?productId=@productUid@" title="@productNotice@" class="btn-prod"><span class="btn-l"><span class="btn-r btn-prod-content">@productNotice@</span></span></a>@ComEndNotice@
+						@ComStartNotice@
+							<a href="/users/notice.html?productId=@productUid@" title="@productNotice@" class="button button_buy button_big">
+							@productNotice@</a>
+						@ComEndNotice@
 					</div>
 				</div>
-				@ComStartCart@ @oneclick@ @ComEndCart@
-				@ComEnd@
+				@ComStartCart@ 
+					@oneclick@ 
+					@ComEndCart@
+					@ComEnd@
 				@productParentList@
 			</div>
-			<div class="product-info-box-info fr">
+			<div class="product-info-box-info">
 				<div class="product-info-b-i-box-inner">
-					<div class="b-i-box-header">
-						<div class="box-yellow-bg-t-l">
-							<div class="box-yellow-bg-t-r">
-								<div class="b-i-box-header-content"><b><a href="/page/skidki.html">Как получить скидку</a></b></div>
-							</div>
+					<div class="product-info-b-i-box-inner__header">
+						<div class="b-i-box-header-content">
+							<b><a class="product-info__link" href="/page/skidki.html">Как получить скидку</a></b>
 						</div>
 					</div>
-					<div class="b-i-box-content">
+					<div class="product-info-b-i-box-inner__content">
 						<table>
 							<tr>
 								<td>Самовывоз:<br><b>бесплатно</b></td>
@@ -104,72 +108,53 @@ function getBrowserInfo() {
 							</tr>
 						</table>
 					</div>
-					<div class="b-i-box-footer">
+					<div class="product-info-b-i-box-inner__footer">
 						<div class="box-yellow-bg-b-l">
 							<div class="box-yellow-bg-b-r">
-								<div class="b-i-box-footer-content"><b><a href="/page/dostavka_i_oplata.html">< Доставка и оплата ></a></b></div>
+								<div class="b-i-box-footer-content">
+									<b><a class="product-info__link" href="/page/dostavka_i_oplata.html">&lt; Доставка и&nbsp;оплата &gt;</a></b>
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-				<div class="text-center">
+				<div class="product-info__paymethod">
 					<img src="images/files/visa.jpg" alt="visa">
 					<img src="images/files/mastercard.jpg" alt="mastercard">
 					<img src="images/files/maestro.jpg" alt="maestro">
 	                <!--noindex-->
-	                <a href="https://market.yandex.ru/shop/146808/reviews" target="_blank"><img src="/UserFiles/Image/Dop/market.jpg" border="0" width="68" height="24" alt="Читайте отзывы покупателей и оценивайте качество магазина на Яндекс.Маркете"></a>
+	                <a href="https://market.yandex.ru/shop/146808/reviews" target="_blank">
+	                	<img src="/UserFiles/Image/Dop/market.jpg" border="0" width="68" height="24" 
+	                		alt="Читайте отзывы покупателей и оценивайте качество магазина на Яндекс.Маркете">
+            		</a>
 	                <!--/noindex-->
 				</div>
-		  </div>
-			<div class="clearfix"></div>
+			</div>
+			<div class="cb"></div>
 			<div class="tab-pane" id="tabPane1">
-			 <script type="text/javascript">tp1 = new WebFXTabPane( document.getElementById( "tabPane1" ) );</script>
+				<script type="text/javascript">tp1 = new WebFXTabPane( document.getElementById( "tabPane1" ) );</script>
 				<div class="tab-page" id="tabPage1">
 					<h2 class="tab">Характеристики</h2>
 					<script type="text/javascript">tp1.addTabPage( document.getElementById( "tabPage1" ) );</script>
 					<span itemprop="description">
-					@productDes@
+						@productDes@
 					</span>
 				</div>
-	            <!--noindex-->
+				<!--noindex-->
 				<div class="tab-page" id="tabPage3">
 					<h2 class="tab">Отзывы</h2>
 					<script type="text/javascript">tp1.addTabPage( document.getElementById( "tabPage3" ) );</script>
-				<!-- Anything Slider -->
-				<link rel="stylesheet" href="java/anythingslider.css">
-				<script src="java/jquery.anythingslider.js"></script>
-				<!-- AnythingSlider initialization -->
-				<!-- Define slider dimensions here -->
-				<style>
-				#slider { width: 380px; height: 210px; padding-left: 35px; padding-right: 35px; padding-top: 10px;}
-				.link-quest {
-					text-align: center;
-					position: relative;
-				}
-				.link-quest a {
-					font-size: 17px;
-					color: #000;
-					padding-left: 20px;
-				}
-				.line-bo {
-					position: absolute;
-					width: 100%;
-					height: 40px;
-					background: url(java/default0.png) repeat-x;
-					top: -50px;
-				}
-				</style>
-
-
-				<ul id="slider">
-					@slideGbookUid@
-				</ul>
+					<!-- Anything Slider -->
+					<script src="java/jquery.anythingslider.js"></script>
+					<ul id="slider">
+						@slideGbookUid@
+					</ul>
 					<div class="link-quest">
 						<a href="/gbook/?add_forma=true">Оставить отзыв</a> <a href="/gbook/">Показать все</a>
 						<div class="line-bo"></div>
 					</div>
-			  </div>
-	          <!--/noindex-->
+				</div>
+			<!--/noindex-->
 			</div>
 		</div>
 </div>

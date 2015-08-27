@@ -98,6 +98,7 @@
   background: none;
   border-radius: 5px;
   display: inline-block;
+  cursor: pointer;
 }
 .button_buy {
   padding: 7.5px 15px;
@@ -131,6 +132,12 @@
 .button_menu.open:after {
   border-bottom: 5px solid #17899e;
   border-top: none;
+}
+.button_big {
+  padding: 10px 0;
+  width: 90%;
+  box-sizing: border-box;
+  text-align: center;
 }
 
 .centermenu {
@@ -773,6 +780,48 @@
   }
 }
 
+.oneclick {
+  position: relative;
+}
+.oneclick__wrapper {
+  display: none;
+  width: 250px;
+  position: absolute;
+  z-index: 9999;
+}
+.oneclick__item {
+  position: relative;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  background: #ebf1f6;
+}
+.oneclick__close {
+  display: inline-block;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 5px 10px;
+  color: #000000;
+  font-size: 1.1em;
+  text-align: right;
+}
+.oneclick-form {
+  padding: 10px;
+}
+.oneclick-form__label {
+  font-weight: bold;
+  padding: 5px 0;
+  display: inline-block;
+}
+.oneclick-form__input {
+  margin: 5px 0;
+  border-radius: 3px;
+  border: 1px solid #555555;
+}
+.oneclick-form__send {
+  text-align: center;
+  margin: 10px 0;
+}
+
 html {
   margin: 0;
   padding: 0;
@@ -1116,8 +1165,38 @@ a img {
   padding: 5px 0;
   color: #ffffff;
 }
+.product-info__link {
+  color: #000000;
+}
+.product-info__link:hover {
+  text-decoration: none;
+}
+.product-info__paymethod {
+  text-align: center;
+}
+.product-info__cart {
+  text-align: center;
+}
 .product-info-box-order-box-art {
   padding-bottom: 5px;
+}
+.product-info-box-info {
+  float: left;
+  width: 47.5%;
+}
+.product-info-b-i-box-inner {
+  background: #ffd203;
+  margin: 0 0 15px;
+  border-radius: 10px;
+  text-align: center;
+}
+.product-info-b-i-box-inner__header,
+.product-info-b-i-box-inner__footer {
+  padding: 7px 0;
+}
+.product-info-b-i-box-inner__content {
+  padding: 5px 0 5px 20px;
+  background: #ececec;
 }
 
 .profile-blank {
@@ -1362,6 +1441,225 @@ a img {
 }
 .shop-sort_order {
   padding: 15px 10px;
+}
+
+
+.product #slider {
+  width: 380px;
+  height: 210px;
+  padding-left: 35px;
+  padding-right: 35px;
+  padding-top: 10px;
+  list-style: none;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.product .anythingSlider-default {
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+.product ul.thumbNav {
+  display: none !important;
+}
+.product .anythingSlider-default .anythingControls a {
+  background: #777777 url('images/default.png') center -288px repeat-x;
+  color: #000;
+  border-radius: 0 0 5px 5px;
+  -moz-border-radius: 0 0 5px 5px;
+  -webkit-border-radius: 0 0 5px 5px;
+}
+.product .anythingSlider-default .anythingControls a span {
+  visibility: visible;
+}
+.product .anythingSlider-default .anythingControls a.cur {
+  background: #888;
+  color: #000;
+}
+.product .anythingSlider-default .anythingControls a.start-stop {
+  background-color: #040;
+  color: #ddd;
+  display: none !important;
+}
+.product .anythingSlider-default .anythingControls a.start-stop.playing {
+  background-color: #800;
+}
+.product .anythingSlider-default .anythingControls a.start-stop:hover,
+.product .anythingSlider-default .anythingControls a.start-stop.hover,
+.product .anythingSlider-default .anythingControls a.start-stop .anythingControls ul a:hover {
+  background-image: none;
+  color: #ddd;
+}
+.product .anythingSlider-default.activeSlider .anythingWindow {
+  background: #e5eaf2;
+}
+.product .anythingSlider-default.activeSlider .anythingControls a {
+  background-color: #7C9127;
+}
+.product .anythingSlider-default.activeSlider .anythingControls a.cur,
+.product .anythingSlider-default.activeSlider .anythingControls a:hover {
+  background: #7C9127;
+}
+.product .anythingSlider-default.activeSlider .anythingControls a.start-stop {
+  background-color: #080;
+  color: #fff;
+}
+.product .anythingSlider-default.activeSlider .anythingControls a.start-stop.playing {
+  background-color: #d00;
+  color: #fff;
+}
+.product .anythingSlider-default.activeSlider .start-stop:hover,
+.product .anythingSlider-default.activeSlider .start-stop.hover {
+  color: #fff;
+}
+.product .anythingSlider-default .arrow {
+  top: 50%;
+  position: absolute;
+  display: block;
+}
+.product .anythingSlider-default .arrow a {
+  display: block;
+  width: 25px;
+  height: 140px;
+  margin: -70px 0 0 0;
+  text-align: center;
+  outline: 0;
+  background: url('images/default.png') no-repeat;
+}
+.product .anythingSlider-default .back {
+  left: 5;
+}
+.product .anythingSlider-default .back a {
+  background-position: left top;
+}
+.product .anythingSlider-default .back a:hover,
+.product .anythingSlider-default .back a.hover {
+  background-position: left -140px;
+}
+.product .anythingSlider-default .forward {
+  right: 5;
+}
+.product .anythingSlider-default .forward a {
+  background-position: right top;
+}
+.product .anythingSlider-default .forward a:hover,
+.product .anythingSlider-default .forward a.hover {
+  background-position: right -140px;
+}
+.product .anythingSlider-default .anythingControls .anythingNavWindow {
+  overflow: hidden;
+  float: left;
+}
+.product .anythingSlider-default .anythingControls .start-stop {
+  padding: 2px 5px;
+  width: 40px;
+  text-align: center;
+  text-decoration: none;
+  float: right;
+  z-index: 100;
+  outline: 0;
+}
+.product .as-oldie .anythingSlider-default .arrow {
+  top: 30%;
+}
+.product .as-oldie .anythingSlider-default .arrow a {
+  margin: 0;
+}
+.product .as-oldie .anythingSlider-default .anythingControls li {
+  margin-left: 3px;
+}
+.product .as-oldie .anythingSlider-default .anythingControls a {
+  margin: 0;
+}
+.product .as-oldie .anythingSlider-default .anythingNavWindow {
+  margin: 0 2px;
+}
+.product .as-oldie .anythingSlider-default .anythingNavWindow li {
+  padding: 3px 0 0 0;
+}
+.product .anythingSlider {
+  display: block;
+  overflow: visible !important;
+  position: relative;
+}
+.product .anythingSlider .anythingWindow {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.product .anythingSlider .anythingBase {
+  background: transparent;
+  list-style: none;
+  position: absolute;
+  overflow: visible !important;
+  top: 0;
+  left: 0;
+  margin: 0;
+  padding: 0;
+}
+.product .anythingSlider .arrow span {
+  display: block;
+  visibility: hidden;
+}
+.product .anythingSlider .arrow.disabled {
+  display: none;
+}
+.product .anythingSlider .panel {
+  background: transparent;
+  display: block;
+  overflow: hidden;
+  float: left;
+  padding: 0;
+  margin: 0;
+}
+.product .anythingSlider .vertical .panel {
+  float: none;
+}
+.product .anythingSlider .fade .panel {
+  float: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+.product .anythingSlider .fade .activePage {
+  z-index: 1;
+}
+.product .anythingSlider.rtl .anythingWindow {
+  direction: ltr;
+  unicode-bidi: bidi-override;
+}
+.product .anythingSlider.rtl .anythingControls ul {
+  float: left;
+}
+.product .anythingSlider.rtl .anythingControls ul a {
+  float: right;
+}
+.product .anythingSlider,
+.product .anythingSlider .anythingWindow,
+.product .anythingSlider .anythingControls ul a,
+.product .anythingSlider .arrow a,
+.product .anythingSlider .start-stop {
+  transition-duration: 0s;
+  -o-transition-duration: 0s;
+  -moz-transition-duration: 0s;
+  -webkit-transition-duration: 0s;
+}
+.product .link-quest {
+  text-align: center;
+  position: relative;
+}
+.product .link-quest a {
+  font-size: 17px;
+  color: #000;
+  padding-left: 20px;
+}
+.product .line-bo {
+  position: absolute;
+  width: 100%;
+  height: 40px;
+  background: url('images/default0.png') repeat-x;
+  top: -50px;
 }
 
 
