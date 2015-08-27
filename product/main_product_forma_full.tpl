@@ -34,7 +34,7 @@ function getBrowserInfo() {
 
 <div class="product clearfix">
 	<div itemscope itemtype="http://schema.org/Product">
-		<h1 itemprop="name">@productName@ 
+		<h1 itemprop="name" class="product__title">@productName@ 
 			<a href="javascript:void(0);" onclick="return bookmark(this);">
 				<img style="position: relative;top: 9px;" src="images/fafor.png" width="28" height="28" alt="Добавить в Избранное" title="Добавить в Избранное">
 			</a>
@@ -93,18 +93,18 @@ function getBrowserInfo() {
 						</div>
 					</div>
 					<div class="product-info-b-i-box-inner__content">
-						<table>
+						<table class="apport">
 							<tr>
-								<td>Самовывоз:<br><b>бесплатно</b></td>
-								<td>0-2 дня</td>
+								<td>Самовывоз:<br><b class="apport__summ">бесплатно</b></td>
+								<td class="apport__time">0-2 дня</td>
 							</tr>
 							<tr>
-								<td>Курьером:<br><b>300руб.</b></td>
-								<td>0-2 дня</td>
+								<td>Курьером:<br><b class="apport__summ">300руб.</b></td>
+								<td class="apport__time">0-2 дня</td>
 							</tr>
 							<tr>
-								<td>Бесплатно:<br><b>от 3000 руб.</b></td>
-								<td></td>
+								<td>Бесплатно:<br><b class="apport__summ">от 3000 руб.</b></td>
+								<td class="apport__time"></td>
 							</tr>
 						</table>
 					</div>
@@ -136,16 +136,19 @@ function getBrowserInfo() {
 				<div class="tab-page" id="tabPage1">
 					<h2 class="tab">Характеристики</h2>
 					<script type="text/javascript">tp1.addTabPage( document.getElementById( "tabPage1" ) );</script>
-					<span itemprop="description">
+					<div class="cb"></div>
+					<span itemprop="description" class="tab-page__item">
 						@productDes@
 					</span>
 				</div>
+					<div class="cb"></div>
 				<!--noindex-->
 				<div class="tab-page" id="tabPage3">
 					<h2 class="tab">Отзывы</h2>
 					<script type="text/javascript">tp1.addTabPage( document.getElementById( "tabPage3" ) );</script>
 					<!-- Anything Slider -->
 					<script src="java/jquery.anythingslider.js"></script>
+					<div class="cb"></div>
 					<ul id="slider">
 						@slideGbookUid@
 					</ul>
@@ -154,6 +157,7 @@ function getBrowserInfo() {
 						<div class="line-bo"></div>
 					</div>
 				</div>
+					<div class="cb"></div>
 			<!--/noindex-->
 			</div>
 		</div>

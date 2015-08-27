@@ -153,7 +153,7 @@ php@
                             @leftCatal@
                         </ul>
                     </nav>
-                    <main class="general__area">
+                    <main class="general">
                         <script type="text/javascript">
                             <!--
                             catalogAktiv('divCatId@thisCat@');

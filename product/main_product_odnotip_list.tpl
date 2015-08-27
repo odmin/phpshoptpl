@@ -1,39 +1,44 @@
-<div class="box-title">
+@php
+// Вывод серии и пр. информации в карточке товара, под описанием
+php@
+<header class="general__separator">
+	<span class="separator">
+		<h2 class="separator__title">Товары из этой серии</h2>
+	</span>
+</header>
 
-	<h2>Товары из этой серии</h2>
+<aside class="general__area">
 
-</div>
+	<div class="box-content-shadow">
 
+		@productOdnotipList@
 
+	</div>
 
-<div class="box-content-shadow">
+</aside>
 
-	@productOdnotipList@
+@productlastview@
 
-</div>
+<header class="general__separator">
+	<span class="separator">
+		<h2 class="separator__title">Как мы работаем</h2>
+	</span>
+</header>
 
+<aside class="general__area">
+	
+	<img src="/UserFiles/Image/Dop/kak-mi-rabotaem.jpg" alt="Как мы работаем" title="Как мы работаем" align="top" border="0px" width="100%">
 
-<div>@productlastview@</div>
+</aside>
 
-<div class="box-title">
+<header class="general__separator">
+	<span class="separator">
+		<h2 class="separator__title">Наш адрес: м.Варшавская, 2-й Котляковский пер. д.1 стр.1</h2>
+	</span>
+</header>
 
-	<h2>Как мы работаем</h2>
+<aside class="general__area">
 
-</div>
+	<img src="/UserFiles/Image/Dop/karta.jpg" alt="Схема проезда" title="Схема проезда" align="top" border="0px" width="100%">
 
-<div class="box-content-shadow">
-
-    <img src="/UserFiles/Image/Dop/kak-mi-rabotaem.jpg" alt="Как мы работаем" title="Как мы работаем" align="top" border="0px" width="100%">
-    
-</div>
-<div class="box-title">
-
-	<h2>Наш адрес: м.Варшавская, 2-й Котляковский пер. д.1 стр.1</h2>
-
-</div>
-
-<div class="box-content-shadow">
-
-    <img src="/UserFiles/Image/Dop/karta.jpg" alt="Схема проезда" title="Схема проезда" align="top" border="0px" width="100%">
-
-</div>
+</aside>
