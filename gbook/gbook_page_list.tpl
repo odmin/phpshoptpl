@@ -1,25 +1,28 @@
-<div class="box-content-shadow">
+@php
+// Шаблон страницы Отзывы
+php@
+<div class="general__area">
+	
+	<div class="box-shop">
 
-<div class="page_nava">
+		<div class="breadcrumbs">
+			<a href="/">Главная</a> / Отзывы
+		</div>
 
-  <div> <a href="/">Главная</a> / Отзывы </div>
+		<h1 class="box-shop__title">Отзывы</h1>
 
-</div>
+		<div align="center" style="padding-bottom:10px;"> <strong style="font-size:14px; color:#FF0000">@Error@</strong></div>
 
-<h1>Отзывы</h1>
+		<div class="gbook-add">
 
-<div align="center" style="padding-bottom:10px;"> <strong style="font-size:14px; color:#FF0000">@Error@</strong></div>
+			<a href="/gbook/?add_forma=true" class="button button_buy">+ новый отзыв</a>
 
-<div class="plashka_center">
+		</div>
 
-  <div style="line-height: 40px;padding-right:10px" align="right"><a href="/gbook/?add_forma=true" class="small">+ новый отзыв</a></div>
+		<div class="page_nav_top">@productPageNav@</div>
 
-</div>
+		@productPageDis@
 
-<div class="page_nav_top">@productPageNav@</div>
-
-@productPageDis@
-
-<div class="page_nav_bot">@productPageNav@</div>
+		<div class="page_nav_bot">@productPageNav@</div>
 
 </div>

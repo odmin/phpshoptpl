@@ -6,7 +6,7 @@ php@
 	<div class="box-shop">
 
 		<div class="breadcrumbs">
-			<a href="/">Главная</a> / <a href="/gbook/">Отзывы</a>
+			<a href="/">Главная</a> / <a href="/gbook/">Отзывы</a> / <b>Оставить отзыв</b>
 		</div>
 
 		<h1 class="box-shop__title">Форма отзыва</h1>

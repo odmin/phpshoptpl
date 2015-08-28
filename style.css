@@ -369,6 +369,11 @@
   }
 }
 
+.gbook-add {
+  width: 100%;
+  text-align: right;
+}
+
 .general__area {
   padding: 30px;
   display: block;
