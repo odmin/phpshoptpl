@@ -1,9 +1,9 @@
+@import '../_framework/var';
 .anythingSlider{
 	transition-duration: 0s;
+	max-width: 100%;
 	
-	.anythingWindow {
-		background: #e5eaf2;
-	}
+	
 
 	.panel{
 		background: transparent;
@@ -12,6 +12,14 @@
 		float: left;
 		padding: 0;
 		margin: 0;
+		& > div{
+			@media @tabletpt{
+				width: 54% !important;
+			}
+			@media @atphone{
+				width: 70% !important;
+			}
+		}
 	}
 
 	.news_tema{
@@ -41,6 +49,7 @@
 	.link-quest{
 		width: 380px;
 		margin: auto;
+		max-width: 100%;
 	}
 	.line-bo{
 		max-width: 380px;

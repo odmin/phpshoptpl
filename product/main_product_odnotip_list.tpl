@@ -9,10 +9,12 @@ php@
 
 <aside class="general__area">
 
-	<div class="box-content-shadow">
+	<div class="box-shop">
+		<div class="box-shop__catalog">
 
-		@productOdnotipList@
+			@productOdnotipList@
 
+		</div>
 	</div>
 
 </aside>

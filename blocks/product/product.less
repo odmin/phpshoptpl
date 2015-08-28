@@ -16,6 +16,9 @@
 		width: 60%;
 		padding: 15px;
 		box-sizing: border-box;
+		@media @atphone{
+			width: 100%;
+		}
 		.photo{
 			width: 100%;
 		}
@@ -26,11 +29,16 @@
 	&-info{
 		float: left;
 		width: 40%;
+		@media @atphone{
+			width: 100%;
+			margin-right: 0;
+		}
 	}
 	&-info-box-order{
 		float: left;
 		width: 47.5%;
 		margin-right: 5%;
+		
 	}
 	&-info-box-order-box-inner{
 		background: @color-gold;

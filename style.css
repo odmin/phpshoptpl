@@ -81,6 +81,7 @@
 
 .breadcrumbs {
   color: #555555;
+  line-height: 2;
 }
 .breadcrumbs__back {
   background: #555555;
@@ -1137,6 +1138,11 @@ a img {
 .product-card_lastview {
   border-color: #555555;
 }
+@media only screen and (max-width: 1023px) {
+  .product-card_lastview {
+    margin-bottom: 10px;
+  }
+}
 .product-two_hover > * {
   opacity: 0.5;
 }
@@ -1160,6 +1166,11 @@ a img {
   padding: 15px;
   box-sizing: border-box;
 }
+@media only screen and (max-width: 767px) {
+  .product-image {
+    width: 100%;
+  }
+}
 .product-image .photo {
   width: 100%;
 }
@@ -1172,6 +1183,12 @@ a img {
 .product-info {
   float: left;
   width: 40%;
+}
+@media only screen and (max-width: 767px) {
+  .product-info {
+    width: 100%;
+    margin-right: 0;
+  }
 }
 .product-info-box-order {
   float: left;
@@ -1692,9 +1709,7 @@ a img {
 .anythingSlider {
   -webkit-transition-duration: 0s;
           transition-duration: 0s;
-}
-.anythingSlider .anythingWindow {
-  background: #e5eaf2;
+  max-width: 100%;
 }
 .anythingSlider .panel {
   background: transparent;
@@ -1703,6 +1718,16 @@ a img {
   float: left;
   padding: 0;
   margin: 0;
+}
+@media only screen and (min-width: 767px) and (max-width: 1023px) {
+  .anythingSlider .panel > div {
+    width: 54% !important;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .anythingSlider .panel > div {
+    width: 70% !important;
+  }
 }
 .anythingSlider .news_tema {
   font-weight: bold;
@@ -1727,6 +1752,7 @@ a img {
 .link-quest {
   width: 380px;
   margin: auto;
+  max-width: 100%;
 }
 .line-bo {
   max-width: 380px;
