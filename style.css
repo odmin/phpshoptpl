@@ -243,6 +243,132 @@
 }
 
 
+.form {
+  width: 80%;
+  margin: auto;
+}
+@media only screen and (max-width: 1023px) {
+  .form {
+    width: 95%;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .form {
+    width: 100%;
+  }
+}
+.form__label {
+  position: relative;
+  float: left;
+  width: 40%;
+  margin: 7.5px 0;
+  color: #555555;
+}
+@media only screen and (max-width: 767px) {
+  .form__label {
+    width: 100%;
+    box-sizing: border-box;
+  }
+}
+.form__label_required:after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  right: 5px;
+  background: url("images/shop/flag_green.gif") no-repeat 0 0;
+  width: 16px;
+  height: 16px;
+}
+.form__input {
+  float: left;
+  width: 55%;
+  max-width: 480px;
+  margin: 7.5px 0;
+  padding: 6px;
+  border: 1px solid #555555;
+  border-radius: 3px;
+}
+@media only screen and (max-width: 767px) {
+  .form__input {
+    width: 100%;
+    box-sizing: border-box;
+  }
+}
+.form__input_captcha {
+  float: none;
+}
+.form__message {
+  display: inline-block;
+  width: 100%;
+  margin: 7.5px 0;
+  padding: 5px 0;
+  background: #ececec;
+  text-align: center;
+}
+.form__captcha {
+  float: left;
+  max-width: 20%;
+}
+@media only screen and (max-width: 767px) {
+  .form__captcha {
+    max-width: 100%;
+    float: none;
+  }
+}
+.form__submit {
+  display: inline-block;
+  width: 100%;
+}
+.form__submit_cnt {
+  text-align: center;
+  padding: 15px 0;
+}
+.form__button {
+  text-decoration: none;
+  color: #555555;
+  padding: 6px 15px;
+  border: 1px solid #555555;
+  border-radius: 3px;
+  position: relative;
+}
+.form__button_clear {
+  margin-right: 5px;
+}
+.form__button_clear:before {
+  content: "";
+  position: relative;
+  display: inline-block;
+  left: 0;
+  top: 4px;
+  width: 18px;
+  height: 18px;
+  margin-right: 5px;
+  background: url("images/shop/brick_error.gif") no-repeat 0 0;
+}
+.form__button_send:before {
+  content: "";
+  position: relative;
+  display: inline-block;
+  left: 0;
+  top: 4px;
+  width: 18px;
+  height: 18px;
+  margin-right: 5px;
+  background: url("images/shop/brick_go.gif") no-repeat 0 0;
+}
+.form__wrapper {
+  float: left;
+  width: 75%;
+  box-sizing: border-box;
+  padding-left: 15px;
+}
+@media only screen and (max-width: 767px) {
+  .form__wrapper {
+    width: 100%;
+    padding-left: 0;
+  }
+}
+
 .general__area {
   padding: 30px;
   display: block;

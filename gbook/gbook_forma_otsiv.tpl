@@ -1,116 +1,55 @@
-<div class="box-content-shadow">
+@php
+// Шаблон страницы Оставить отзыв
+php@
+<div class="general__area">
+	
+	<div class="box-shop">
 
-<div class="page_nava">
+		<div class="breadcrumbs">
+			<a href="/">Главная</a> / <a href="/gbook/">Отзывы</a>
+		</div>
 
-  <div> <a href="/">Главная</a> / <a href="/gbook/">Отзывы</a> </div>
+		<h1 class="box-shop__title">Форма отзыва</h1>
 
-</div>
+		<div align="center" style="padding-bottom:10px;"> <strong	style="font-size:14px; color:#FF0000">@Error@</strong></div>
 
-<h2>Форма отзыва</h2>
+		<form method="post" name="forma_gbook" class="form">
+			
+			<label for="name_new" class="form__label form__label_required">Имя</label>
+			<input type="text" name="name_new" maxlength="45" id="name_new" class="form__input" required>
+			<label for="mail_new" class="form__label">E-mail</label>
+			<input type="text" name="mail_new" maxlength="45" id="mail_new" class="form__input">
+			<label for="tema_new" class="form__label form__label_required">Тема или № Заказа</label>
+			<textarea name="tema_new" maxlength="60" class="form__input" required></textarea>
+			<label for="otsiv_new" class="form__label form__label_required">Отзыв</label>
+			<textarea name="otsiv_new" maxlength="1000"  class="form__input" required></textarea>
+			<div class="cb"></div>
+			<span class="form__message">
+				<img src="images/shop/comment.gif" alt="">
+				Данные, отмеченные <b>звездочками</b> обязательны для заполнения
+			</span>
+			<span class="form__submit">
+				<img src="phpshop/captcha.php" alt="captcha" border="0" class="form__captcha">
+				<div class="form__wrapper">
+					<label for="key" class="form__label form__label_required form__label_captcha">Введите код, указанный на картинке</label>
+					<input type="text" name="key" id="key" class="form__input form__input_captcha" required>
+				</div>
+				<div class="cb"></div>
+			</span>
+			<input type="Hidden" name="send_gb">
 
-<div align="center" style="padding-bottom:10px;"> <strong  style="font-size:14px; color:#FF0000">@Error@</strong></div>
+			<span class="form__submit form__submit_cnt">
 
-<form method="post" name="forma_gbook">
+				<a href="javascript:forma_gbook.reset();" class="form__button form__button_clear">Очистить форму</a>
 
-  <table cellpadding="5" cellspacing="1" border="0" class="standart" align="center">
+				<a href="javascript:Fchek();" class="form__button form__button_send">Добавить отзыв</a>
+				
+			</span>
 
-    <tr>
+			<input type="hidden" name="send_gb" value="ok" >
+			
+		</form>
 
-      <td align="right">Имя</td>
-
-      <td align="left"><input type="text" name="name_new" maxlength="45" style="width:300px; height:18px; font-family:tahoma; font-size:11px ; color:#4F4F4F ">
-
-        <img src="images/shop/flag_green.gif" alt="flag_green" width="16" height="16" border="0" hspace="5" align="top"> </td>
-
-    </tr>
-
-    <tr >
-
-      <td align="right">E-mail</td>
-
-      <td align="left"><input type="text" name="mail_new" maxlength="45" style="width:300px; height:18px; font-family:tahoma; font-size:11px ; color:#4F4F4F ">
-
-      </td>
-
-    </tr>
-
-    <tr>
-
-      <td align="right">Тема или № Заказа</td>
-
-      <td><textarea style="width:300px; height:50px; font-family:tahoma; font-size:11px ; color:#4F4F4F " name="tema_new" maxlength="60"></textarea>
-
-        <img src="images/shop/flag_green.gif" alt="flag_green" width="16" height="16" border="0" hspace="5" align="top"></td>
-
-    </tr>
-
-    <tr bgcolor="ffffff">
-
-      <td align="right">Отзыв</td>
-
-      <td valign="top"><textarea style="width:300px; height:150px; font-family:tahoma; font-size:11px ; color:#4F4F4F " name="otsiv_new" maxlength="1000" ></textarea>
-
-        <img src="images/shop/flag_green.gif" alt="flag_green" width="16" height="16" border="0" hspace="5" align="top"></td>
-
-    </tr>
-
-  </table>
-
-  <table cellpadding="5" cellspacing="1" border="0" class="standart" width="100%">
-
-    <tr>
-
-      <td colspan="2" align="center"><DIV class="gbook_otvet"><IMG height=16 hspace=5 src="images/shop/comment.gif" width=16 align=absMiddle border=0>Данные, отмеченные <B>звездочками</B> обязательны для заполнения</font></DIV>
-
-        <p><br>
-
-        </p>
-
-        <table>
-
-          <tr>
-
-            <td><img src="phpshop/captcha.php" alt="captcha" border="0"></td>
-
-            <td>Введите код, указанный на картинке<br>
-
-              <input type="text" name="key" style="width:220px;">
-
-              <img src="images/shop/flag_green.gif" alt="flag_green" width="16" height="16" border="0" hspace="5" align="top"></td>
-
-          </tr>
-
-        </table>
-
-        <p><br>
-
-        </p>
-
-        <input type="Hidden" name="send_gb">
-
-        <table align="center">
-
-          <tr>
-
-            <td><img src="images/shop/brick_error.gif" alt="brick_error" width="16" height="16" border="0"><a href="javascript:forma_gbook.reset();" class="standart"><u class=style1>Очистить форму</u></a></td>
-
-            <td width="20"></td>
-
-            <td><img src="images/shop/brick_go.gif" alt="brick_go" width="16" height="16" border="0"><a href="javascript:Fchek();" class="standart"><u class=style1>Добавить отзыв</u></a></td>
-
-          </tr>
-
-        </table>
-
-        <input type="hidden" name="send_gb" value="ok" >
-
-      </td>
-
-    </tr>
-
-  </table>
-
-</form>
+	</div>
 
 </div>
-
