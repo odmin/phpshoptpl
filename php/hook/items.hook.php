@@ -47,4 +47,5 @@ $addHandler=array
         (
         'checkStore'=>'checkStore_hook'
 );
+
 ?>

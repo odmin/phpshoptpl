@@ -19,10 +19,28 @@ php@
 
 		</div>
 
-		<div class="page_nav_top">@productPageNav@</div>
+		<div class="page-nav page-nav_top">@productPageNav@</div>
+		
+		<div class="box-shop__catalog">
+			
+			@productPageDis@
 
-		@productPageDis@
+		</div>
 
-		<div class="page_nav_bot">@productPageNav@</div>
+		<div class="page-nav page-nav_bottom">@productPageNav@</div>
+
+	</div>
 
 </div>
+<script>
+	window.onload = function () {
+		var html = document.getElementsByClassName('page-nav')[0];
+		html.innerHTML = html.innerHTML.replace(/ \/ /gi, '');
+		html = document.getElementsByClassName('page-nav')[1];
+		html.innerHTML = html.innerHTML.replace(/ \/ /gi, '');
+		$('.general').find('a').each(function () {
+			console.log($(this).attr('href').indexOf('/gbook/?add_forma=true'));
+			if($(this).attr('href').indexOf('/gbook/?add_forma=true') != -1) $(this).addClass('button button_buy button_indent').css('text-decoration', 'none');
+		})
+	}
+</script>

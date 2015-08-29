@@ -1,0 +1,37 @@
+@import '../_framework/var';
+
+.page-nav{
+	color: @color-black;
+	text-align: center;
+	& > a{ // link
+		.button-css();
+		color: @color-black;
+		margin-left: -1px;
+		&:hover{
+			background: @color-gold;
+		}
+		&:last-child{
+			margin-left: -4px;
+		}
+	}
+	& > b{ // current page
+		.button-css();
+		background: @color-gold;
+		margin-left: -1px;
+	}
+	&_top{
+		padding-bottom: @indent;
+	}
+	&_bottom{
+		padding-top: @indent;
+	}
+}
+
+.button-css(){
+	display: inline-block;
+	font-size: 14px;
+	border: 1px solid #ccc;
+	padding: 6px 10px;
+	text-decoration: none !important;
+	// width: 60px;
+}

@@ -155,6 +155,9 @@
   box-sizing: border-box;
   text-align: center;
 }
+.button_indent {
+  margin: 30px 0;
+}
 
 .centermenu {
   margin: 25px auto 30px;
@@ -369,9 +372,66 @@
   }
 }
 
+.gbook {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #555555;
+  border-top: 1px solid #555555;
+}
+.gbook:first-child {
+  border-top: none;
+}
+.gbook__client {
+  position: relative;
+  padding: 10px 0;
+}
+.gbook__client,
+.gbook__client a {
+  color: #000000;
+}
+.gbook__client:before {
+  content: '';
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  position: relative;
+  left: 0;
+  margin-right: 5px;
+  background: url('images/shop/icon-client.gif') no-repeat 0 0;
+}
+.gbook__text {
+  color: #555555;
+}
+.gbook__reply {
+  width: 100%;
+  background: #ececec;
+  padding: 10px;
+  box-sizing: border-box;
+  min-height: 36px;
+}
+.gbook__reply:before {
+  content: '';
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  position: relative;
+  left: 0;
+  margin-right: 5px;
+  background: url('images/shop/comment_new.gif') no-repeat 0 0;
+}
 .gbook-add {
   width: 100%;
   text-align: right;
+}
+.gbook-add .button {
+  margin: 0;
+}
+@media only screen and (max-width: 767px) {
+  .gbook-add {
+    padding: 10px 0;
+  }
 }
 
 .general__area {
@@ -967,6 +1027,41 @@
 .oneclick-form__send {
   text-align: center;
   margin: 10px 0;
+}
+
+.page-nav {
+  color: #000000;
+  text-align: center;
+}
+.page-nav > a {
+  display: inline-block;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  padding: 6px 10px;
+  text-decoration: none !important;
+  color: #000000;
+  margin-left: -1px;
+}
+.page-nav > a:hover {
+  background: #ffd203;
+}
+.page-nav > a:last-child {
+  margin-left: -4px;
+}
+.page-nav > b {
+  display: inline-block;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  padding: 6px 10px;
+  text-decoration: none !important;
+  background: #ffd203;
+  margin-left: -1px;
+}
+.page-nav_top {
+  padding-bottom: 30px;
+}
+.page-nav_bottom {
+  padding-top: 30px;
 }
 
 html {

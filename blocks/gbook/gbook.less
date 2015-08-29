@@ -1,7 +1,57 @@
+@import '../_framework/var';
 .gbook{
-	
+	width: 100%;
+	padding: 10px 0;
+	font-size: 14px;
+	line-height: 1.5;
+	color: @color-text;
+	border-top: 1px solid @color-text;
+	&:first-child{
+		border-top: none;
+	}
+	&__client{
+		position: relative;
+		padding: 10px 0;
+		&,
+		& a{
+			color: @color-black;
+		}
+		&:before{
+			.pseudo('images/shop/icon-client.gif');
+		}
+	}
+	&__text{
+		color: @color-text;
+	}
+	&__reply{
+		width: 100%;
+		background: @color-smoky-white;
+		padding: 10px;
+		box-sizing: border-box;
+		min-height: 36px; //icon + padding
+		&:before{
+			.pseudo('images/shop/comment_new.gif');
+		}
+	}
 }
 .gbook-add{
 	width: 100%;
 	text-align: right;
+	.button{
+		margin: 0;
+	}
+	@media @atphone{
+		padding: 10px 0;
+	}
+}
+
+.pseudo(@url: 'images/shop/icon-client.gif'){
+	content: '';
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	position: relative;
+	left: 0;
+	margin-right: 5px;
+	background: url(@url) no-repeat 0 0;
 }
