@@ -1,18 +1,31 @@
-<div class="box-content-shadow">
+@php
+// Шаблон страницы
+php@
+<div class="general__area">
 
-	<div class="page_nava">
+	<div class="box-shop">
 
-	  <div> @breadCrumbs@ </div>
+		<div class="breadcrumbs">
+			@breadCrumbs@
+		</div>
 
+
+		<h1 class="box-shop__title">@pageTitle@</h1>
+
+		<div class="box-shop__catalog">
+			@catContent@
+		</div>
+
+		<div class="box-shop__catalog">
+			<div class="usercontent">
+				@pageContent@
+			</div>
+		</div>
+
+		<div class="page-nav page-nav_bottom">
+			@pageNav@
+		</div>
+	
 	</div>
 
-	<h1>@pageTitle@</h1>
-
-	<p>@catContent@</p>
-
-	<div style="padding:5px 0px">@pageContent@</div>
-
-	<div class="page_nav_bot">@pageNav@</div>
-
 </div>
-

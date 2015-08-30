@@ -1,15 +1,26 @@
-<div class="box-content-shadow clearfix">
+@php
+// Шаблон страницы Новости
+php@
+<div class="news">
 
-<div class="newsDate" style="color:#000">@newsData@</div>
+	<div class="newsDate news__date">@newsData@</div>
 
-<div class="newsName2"><a href="/news/ID_@newsId@.html" title="@newsZag@"><h2>@newsZag@</h2></a></div>
+	<div class="newsName2">
+		<a href="/news/ID_@newsId@.html" title="@newsZag@" class="news__link">
+			<h2 class="news__title">@newsZag@</h2>
+		</a>
+	</div>
 
-<div style="padding-top:0px">@newsKratko@</div>
+	<div class="news__content">
+		<div class="usercontent">
+			@newsKratko@
+		</div>
+	</div>
 
-<p></p>
-
-<div align="center"><a href="/news/ID_@newsId@.html" target="_self" title="@newsZag@"><img src="/UserFiles/Image/Dop/chitat-polnostiu.png"></a></div>
-  
-<div class="line"></div>
+	<div class="news__detail">
+		<a href="/news/ID_@newsId@.html" target="_self" title="@newsZag@" class="button button_buy">
+			Читать полностью
+		</a>
+	</div>
 
 </div>

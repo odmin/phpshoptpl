@@ -1,13 +1,18 @@
-<div class="box-content-shadow">
+@php
+// Шаблон страницы Новости: одна новость подробно
+php@
 
-<div class="page_nava">
+<div class="general__area">
+	
+	<div class="box-shop">
 
-  <div> <a href="/">Главная</a> / <a href="/news/" title="Новости">Новости</a> / @newsZag@ </div>
+		<div class="breadcrumbs">
+			<a href="/">Главная</a> / <a href="/news/" title="Новости">Новости</a> / @newsZag@ 
+		</div>
 
-</div>
+		<h1 title="@newsZag@" class="box-shop__title">@newsZag@</h1>
 
-<h1 title="@newsZag@">@newsZag@</h1>
-
-@productPageDis@
+		@productPageDis@
   
+	</div>
 </div>

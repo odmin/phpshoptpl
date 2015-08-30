@@ -27,5 +27,33 @@
 	}
 	table{
 		width: 100%;
+		td{
+			padding: 5px;
+		}
+		@media @atphone{
+			& td{
+				display: block;
+				float: left;
+				width: 96%;
+				padding: 5px 2%;
+				box-sizing: content-box;
+			}
+			& tr:last-child:after{
+				display: block;
+				content: "";
+				clear: both;
+			}
+		}
+	}
+	img{
+		max-width: 100%;
+		height: auto;
+	}
+	object,
+	embed{
+		max-width: 100%;
+	}
+	&_fs_medium{
+		font-size: 1.2em;
 	}
 }

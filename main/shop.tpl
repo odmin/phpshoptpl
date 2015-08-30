@@ -171,7 +171,7 @@ php@
             </div>
         </div>
         <footer class="page__footer">
-            <div class="wrapper">
+            <div class="wrapper wrapper_transparent">
                 <nav class="menu menu_footer">
                     <a class="menu__item" href="/page/o-magazine.html" title="О магазине">О магазине</a>  &#9642; 
                     <a class="menu__item" href="/map/" title="Карта сайта">Карта сайта</a>  &#9642; 

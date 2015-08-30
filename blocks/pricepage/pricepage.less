@@ -1,0 +1,55 @@
+@import '../_framework/var';
+
+.pricepage{
+	width: 100%;
+	&__links{
+		background: @color-smoky-white;
+		padding: 20px 10px;
+		border-radius: 3px;
+	}
+	&__link{
+		display: inline-block;
+		padding: 5px 10px;
+		margin-right: 10px;
+		margin-bottom: 5px;
+		
+		color: #000;
+		text-decoration: none;
+		border: 1px solid @color-wet-asphalt;
+		border-radius: 5px;
+		
+		&:hover{
+			background: @color-white;
+		}
+
+		&:last-child{
+			margin-right: 0;
+		}
+
+		@media @atphone{
+			box-sizing: border-box;
+			width: 99%;
+			font-size: 1.2em;
+			padding: 10px;
+		}
+	}
+	&__tablerow{
+		
+	}
+}
+
+.pricepage-table{
+	a{
+		.normal-link();
+		display: inline-block;
+		padding: 5px 0 5px 5px;
+	}
+	.bgprice{
+		font-size: 1.4em;
+		text-indent: 5px;
+	}
+}
+
+#catId{
+	padding: 5px 0;
+}

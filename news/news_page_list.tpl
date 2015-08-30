@@ -1,30 +1,32 @@
-<div class="box-content-shadow">
+@php
+// Шаблон страницы Новости: список
+php@
+<div class="general__area">
+	
+	<div class="box-shop">
 
-<div class="page_nava">
+		<div class="breadcrumbs"> 
 
-  <div> <a href="/">Главная</a> /  Новости </div>
+			<a href="/">Главная</a> /  Новости 
 
+		</div>
+
+		<h1 class="box-shop__title">Новости</h1>
+
+		<div class="box-shop__catalog">
+			@productPageDis@
+		</div>
+
+		<div class="page-nav page-nav_bottom">@productPageNav@</div>
+
+	</div>
 </div>
 
-<h1>Новости</h1>
-
-<div style="padding-top:7px;">@productPageDis@</div>
-
-<table cellpadding="0" cellspacing="0" border="0" class="catalogOptionTable2">
-
-  <tbody>
-
-    <tr>
-
-      <td align="left" valign="bottom"><div class="page_nav_bot">@productPageNav@</div></td>
-
-      <td align="right" valign="bottom">&nbsp;</td>
-
-    </tr>
-
-  </tbody>
-
-</table>
-
-</div>
-
+<script>
+	window.onload = function () {
+		var html = document.getElementsByClassName('page-nav')[0];
+		html.innerHTML = html.innerHTML.replace(/ \/ /gi, '');
+		html = document.getElementsByClassName('page-nav')[1];
+		html.innerHTML = html.innerHTML.replace(/ \/ /gi, '');
+	}
+</script>

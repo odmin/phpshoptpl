@@ -1,0 +1,33 @@
+@import '../_framework/var';
+
+.news{
+	width: 100%;
+	display: block;
+	border-top: 5px solid @color-smoky-white;
+	border-bottom: 5px solid @color-smoky-white;
+	padding: 10px 0;
+	&__content{
+		font-size: 1.2em;
+	}
+	&__title{
+		text-transform: uppercase;
+		font: bold 1.8em Arial, Tahoma, Helvetica, sans-serif;
+		font-style: italic;
+	}
+	&__link{
+		text-decoration: none;
+		color: @color-black;
+		&:hover{
+			text-decoration: underline;
+		}
+	}
+	&__date{
+		
+	}
+	&__detail{
+		width: 100%;
+		text-align: center;
+		font-size: 1.4em;
+		padding: 10px;
+	}
+}

@@ -987,6 +987,35 @@
   }
 }
 
+.news {
+  width: 100%;
+  display: block;
+  border-top: 5px solid #ececec;
+  border-bottom: 5px solid #ececec;
+  padding: 10px 0;
+}
+.news__content {
+  font-size: 1.2em;
+}
+.news__title {
+  text-transform: uppercase;
+  font: bold 1.8em Arial, Tahoma, Helvetica, sans-serif;
+  font-style: italic;
+}
+.news__link {
+  text-decoration: none;
+  color: #000000;
+}
+.news__link:hover {
+  text-decoration: underline;
+}
+.news__detail {
+  width: 100%;
+  text-align: center;
+  font-size: 1.4em;
+  padding: 10px;
+}
+
 .oneclick {
   position: relative;
 }
@@ -1177,6 +1206,54 @@ a img {
 }
 .price_theme_incard .price__actual {
   font-weight: bold;
+}
+
+.pricepage {
+  width: 100%;
+}
+.pricepage__links {
+  background: #ececec;
+  padding: 20px 10px;
+  border-radius: 3px;
+}
+.pricepage__link {
+  display: inline-block;
+  padding: 5px 10px;
+  margin-right: 10px;
+  margin-bottom: 5px;
+  color: #000;
+  text-decoration: none;
+  border: 1px solid #555555;
+  border-radius: 5px;
+}
+.pricepage__link:hover {
+  background: #ffffff;
+}
+.pricepage__link:last-child {
+  margin-right: 0;
+}
+@media only screen and (max-width: 767px) {
+  .pricepage__link {
+    box-sizing: border-box;
+    width: 99%;
+    font-size: 1.2em;
+    padding: 10px;
+  }
+}
+.pricepage-table a {
+  color: #000000;
+  display: inline-block;
+  padding: 5px 0 5px 5px;
+}
+.pricepage-table a:hover {
+  text-decoration: none;
+}
+.pricepage-table .bgprice {
+  font-size: 1.4em;
+  text-indent: 5px;
+}
+#catId {
+  padding: 5px 0;
 }
 
 .panel_l,
@@ -1679,6 +1756,9 @@ a img {
   font: bold 2em Arial, Tahoma, Helvetica, sans-serif;
   font-style: italic;
 }
+.box-shop__catalog {
+  min-height: 200px;
+}
 .box-shop__catalog > table {
   width: 100%;
 }
@@ -2112,6 +2192,34 @@ a img {
 .usercontent table {
   width: 100%;
 }
+.usercontent table td {
+  padding: 5px;
+}
+@media only screen and (max-width: 767px) {
+  .usercontent table td {
+    display: block;
+    float: left;
+    width: 96%;
+    padding: 5px 2%;
+    box-sizing: content-box;
+  }
+  .usercontent table tr:last-child:after {
+    display: block;
+    content: "";
+    clear: both;
+  }
+}
+.usercontent img {
+  max-width: 100%;
+  height: auto;
+}
+.usercontent object,
+.usercontent embed {
+  max-width: 100%;
+}
+.usercontent_fs_medium {
+  font-size: 1.2em;
+}
 
 .wrapper {
   width: 90%;
@@ -2133,4 +2241,7 @@ a img {
   box-shadow: 0px 3px 10px 5px rgba(50, 50, 50, 0.4);
   border: none;
   border-radius: 0 0 20px 20px;
+}
+.wrapper_transparent {
+  background: transparent;
 }
