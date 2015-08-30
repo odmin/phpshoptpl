@@ -1,26 +1,25 @@
-<div class="box-content-shadow">
-    
-	<div class="page_nava">
-
-	  <div> <a href="/">Главная</a> / Ваша корзина </div>
-
-	</div>
-
+@php
+// Шаблон страницы Корзина - корзина с покупками
+php@
+<div class="general__area">
 	
-	@orderContentCart@
+	<div class="box-shop">
 
-	<div align="center" style="padding: 10px"> <!--<a href="javascript:cartClean();" title="Очистить корзину"><IMG hspace=5 src="images/shop/basket_remove.gif" align=absMiddle border="0">Очистить корзину</a>-->     <a href="phpshop/forms/cart/index.html" title="Печатная форма корзины" target="_blank"><IMG hspace=5 src="images/shop/action_print.gif" align=absMiddle border="0">Распечатать</a> </div>
+		<div class="breadcrumbs">
+			<a href="/">Главная</a> / Ваша корзина 
+		</div>
 
-</div>
+		@orderContentCart@
 
-<div class="box-title">
+		<div align="center" style="padding: 10px">
+			<a href="phpshop/forms/cart/index.html" title="Печатная форма корзины" target="_blank" class="button button_white">
+				<img hspace=5 src="images/shop/action_print.gif" align=absMiddle border="0">
+				Распечатать
+			</a>
+		</div>
 
-	<h2>Личные данные</h2>
+	<h2 class="box-shop__title">Личные данные</h2>
 
-</div>
-
-<div class="box-content-shadow">
-
-	@orderContent@ 
+	@orderContent@
 
 </div>

@@ -1,118 +1,81 @@
-<table border=0 width=99% cellpadding=0 cellspacing=3>
+<div class="grid cart-table cart-table_caption">
+	<div class="grid__col3 grid__col_phone2">
+		<p class="cart-content"><strong>Наименование</strong></p>
+	</div>
+	<div class="grid__col1 grid__col_phone1 cart-table__right">
+		<p class="cart-content">
+			<strong>Кол-во</strong>
+		</p>
+	</div>
+	<div class="grid__col1 grid__col_phone2">
+		<table class="cart-rule">
+			<tbody>
+				<tr>
+					<td width="20%"><strong>&nbsp;</strong></td>
+					<td width="40%" align="right"><strong>Цена</strong></td>
+					<td width="40%" align="right"><strong>Сумма</strong></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</div>
+@display_cart@
+<div class="grid cart-table cart-table_footer">
+	<div class="grid__col3 grid__col_phone1">
+		<p class="cart-content"><strong>Итого:</strong></p>
+	</div>
+	<div class="grid__col1 grid__col_phone1 cart-table__right">
+		<p class="cart-content"><strong>@cart_num@</strong> (шт.)</p>
+	</div>
+	<div class="grid__col1 grid__col_phone1 cart-table__right">
+			<strong>@cart_sum@ @currency@.</strong>
+	</div>
+</div>
+<div class="cb"></div>
 
-    <tr>
+<table border="0" width="99%" cellpadding="0" cellspacing="3" align="center" class="cart cart_after">
 
-        <td ><strong>Наименование</strong></td>
+	<tr style="visibility:hidden;display:none;">
 
-        <td width=50><strong>Кол-во</strong></td>
+		<td colspan="4" valign="top">Вес товаров:</td>
 
-        <td width=50><strong>Операции</strong></td>
+		<td class=black align="right"><span id="WeightSumma">@cart_weight@</span> гр. </td>
 
-        <td width=70 align="right" colspan=""><strong>Цена</strong></td>
+	</tr>
 
-        <td width=70 align="right" colspan=""><strong>Сумма</strong></td>
+	<tr>
 
-    </tr>
+		<td colspan="4" valign="top">Скидка: (На товары по акции, скидка не распространяется)</td>
 
-    <tr>
+		<td align="right"><span id="SkiSumma">@discount@</span>&nbsp;%</td>
 
-        <td colspan="5">
+	</tr>
 
-            <img src="images/shop/break.gif" width="100%" height="1" border="0">
+	<tr>
 
-        </td>
+		<td colspan="4" valign="top">Доставка:</td>
 
-    </tr>
+		<td class=black align="right"><span id="DosSumma">@delivery_price@</span>&nbsp; @currency@</td>
 
-    @display_cart@
+	</tr>
 
-    <tr>
+	<tr>
 
-        <td colspan="5">
+		<td>
 
-            <img src="images/shop/break.gif" width="100%" height="1" border="0">
+			К оплате с учетом скидки:
 
-        </td>
+		</td>
 
-    </tr>
+		<td class=style2>
 
-    <tr style="padding-top:10px">
+		</td>
 
-        <td ><b>Итого:</b></td>
+		<td colspan=3 align="right" class=black>
 
-        <td>
+			<b><span id="TotalSumma">@total@</span></b> @currency@</td>
 
-            <strong>@cart_num@</strong> (шт.)
-
-        </td>
-
-        <td></td>
-
-        <td></td>
-
-        <td align="right">
-
-            @cart_sum@ @currency@<br>
-
-        </td>
-
-    </tr>
-
-    <tr>
-
-        <td colspan="5">
-
-            <img src="images/shop/break.gif" width="100%" height="1" border="0">
-
-        </td>
-
-    </tr>
-
-</table>
-
-<table border="0" width="99%" cellpadding="0" cellspacing="3" align="center">
-
-    <tr style="visibility:hidden;display:none;">
-
-        <td colspan="4" valign="top">Вес товаров:</td>
-
-        <td class=black align="right"><span id="WeightSumma">@cart_weight@</span> гр. </td>
-
-    </tr>
-
-    <tr>
-
-        <td colspan="4" valign="top">Скидка: (На товары по акции, скидка не распространяется)</td>
-
-        <td align="right"><span id="SkiSumma">@discount@</span>&nbsp;%</td>
-
-    </tr>
-
-    <tr>
-
-        <td colspan="4" valign="top">Доставка:</td>
-
-        <td class=black align="right"><span id="DosSumma">@delivery_price@</span>&nbsp; @currency@</td>
-
-    </tr>
-
-    <tr>
-
-        <td>
-
-            К оплате с учетом скидки:
-
-        </td>
-
-        <td class=style2>
-
-        </td>
-
-        <td colspan=3 align="right" class=black>
-
-            <b><span id="TotalSumma">@total@</span></b> @currency@</td>
-
-    </tr>
+	</tr>
 
 </table>
 
@@ -120,12 +83,12 @@
 
 <script>
 
-    if(window.document.getElementById('num')){
+	if(window.document.getElementById('num')){
 
-        window.document.getElementById('num').innerHTML='@cart_num@';
+		window.document.getElementById('num').innerHTML='@cart_num@';
 
-        window.document.getElementById('sum').innerHTML='@cart_sum@';
+		window.document.getElementById('sum').innerHTML='@cart_sum@';
 
-    }
+	}
 
 </script>
