@@ -426,6 +426,9 @@
     width: 38%;
   }
 }
+.form__input_pasapprouve {
+  width: 100%;
+}
 .form__message {
   display: inline-block;
   width: 100%;
@@ -530,6 +533,17 @@
     margin-left: 0;
     font-size: 0.9em;
   }
+}
+.form__checkbox {
+  margin: 10px;
+  float: left;
+}
+.form-errors {
+  font-size: 1.4em;
+  color: #ff0000;
+}
+.form-errors ul {
+  list-style: none;
 }
 
 .gbook {

@@ -50,13 +50,13 @@
 	<span class="form__helper"> - </span>
 	<input type="text" name="tel_new" value='@php echo $_POST["tel_new"]; php@' class="form__input form__input_sm">
 
-	<label for="adres_new" class="form__label">Телефон:</label>
+	<label for="adres_new" class="form__label">Адрес:</label>
 	<textarea name="adres_new" rows="5" id="adres_new" class="form__input">@php echo $_POST["adres_new"]; php@</textarea>
 	<span class="form__comment">Пример: м.Варшавская, 2-й Котляковский пер., д. 1 к. 4 кв. 22</span>
 	
 	<span class="form__submit">
 		<span class="text">
-			<img src="phpshop/captcha.php" alt="captcha" border="0" class="form__captcha">
+			<img src="phpshop/captcha.php" alt="captcha" border="0" class="form__captcha" id="captcha">
 			<a class="text__link"  title="Обновить картинку" href="javascript:CapReload();">Обновить картинку</a>
 		</span>
 		<div class="form__wrapper">
@@ -69,7 +69,7 @@
 	<span class="form__message">
 		<img src="images/shop/comment.gif" alt="">
 		Данные, отмеченные <b>звездочками</b> обязательны для заполнения
-		<p>@user_error@</p>
+		<div class="form-errors">@user_error@</div>
 	</span>
 	<div class="cb"></div>
 	<span class="form__submit form__submit_cnt">
