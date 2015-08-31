@@ -149,6 +149,21 @@
   border-bottom: 5px solid #17899e;
   border-top: none;
 }
+.button_green {
+  padding: 10px 15px;
+  background: #3CCF41;
+  background: -webkit-linear-gradient(#3ccf41, #128810);
+  background: linear-gradient(#3ccf41, #128810);
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px 0px rgba(50, 50, 50, 0.75);
+  font-size: 26px;
+  font-weight: bold;
+  color: #ffffff;
+  text-shadow: 3px 3px 1px rgba(0, 0, 0, 0.7);
+}
+.button_green:hover {
+  background: #05677a;
+}
 .button_big {
   padding: 10px 0;
   width: 90%;
@@ -226,7 +241,6 @@
 }
 .cart-table_body {
   padding: 10px 0;
-  border-top: 1px solid #555555;
   border-bottom: 1px solid #555555;
 }
 .cart-table_footer {
@@ -386,6 +400,16 @@
 .form__input_captcha {
   float: none;
 }
+.form__input_sm {
+  float: none;
+  display: inline-block;
+  width: auto;
+}
+@media only screen and (max-width: 767px) {
+  .form__input_sm {
+    width: 38%;
+  }
+}
 .form__message {
   display: inline-block;
   width: 100%;
@@ -407,6 +431,7 @@
 .form__submit {
   display: inline-block;
   width: 100%;
+  line-height: 1.5;
 }
 .form__submit_cnt {
   text-align: center;
@@ -455,6 +480,39 @@
   .form__wrapper {
     width: 100%;
     padding-left: 0;
+  }
+}
+.form__helper {
+  font-size: 18px;
+}
+.form__select {
+  float: left;
+  width: 60%;
+}
+.form__select select {
+  max-width: 100%;
+  padding: 5px 0;
+  margin: 7.5px 0;
+  border: 1px solid #555555;
+  border-radius: 3px;
+  cursor: pointer;
+}
+@media only screen and (max-width: 767px) {
+  .form__select {
+    width: 100%;
+  }
+}
+.form__comment {
+  float: left;
+  margin-left: 40%;
+  width: 60%;
+  color: #555555;
+}
+@media only screen and (max-width: 767px) {
+  .form__comment {
+    width: 100%;
+    margin-left: 0;
+    font-size: 0.9em;
   }
 }
 
@@ -2234,6 +2292,12 @@ a img {
 }
 .text__line_returncall a:hover {
   border-bottom: none;
+}
+.text__link {
+  color: #000000;
+}
+.text__link:hover {
+  text-decoration: none;
 }
 .text_white {
   color: #ffffff;

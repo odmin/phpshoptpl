@@ -54,6 +54,15 @@
 		&_captcha{
 			float: none;
 		}
+		&_sm{
+			float: none;
+			display: inline-block;
+			width: auto;
+			
+			@media @atphone{
+				width: 38%;
+			}
+		}
 	}
 	&__message{
 		display: inline-block;
@@ -76,6 +85,8 @@
 	&__submit{
 		display: inline-block;
 		width: 100%;
+		
+		line-height: 1.5;
 
 		&_cnt{
 			text-align: center;
@@ -131,6 +142,40 @@
 		@media @atphone{
 			width: 100%;
 			padding-left: 0;
+		}
+	}
+	&__helper{
+		font-size: 18px;
+	}
+	&__select{
+		// select wrapper only, for backend hook
+		float: left;
+		width: 60%;
+		select{
+			max-width: 100%;
+			padding: 5px 0;
+			margin: 7.5px 0;
+			
+			border: 1px solid @color-text;
+			border-radius: 3px;
+			
+			cursor: pointer;
+		}
+		@media @atphone{
+			width: 100%;
+		}
+	}
+	&__comment{
+		float: left;
+		margin-left: 40%;
+		width: 60%;
+		
+		color: @color-text;
+		
+		@media @atphone{
+			width: 100%;
+			margin-left: 0;
+			font-size: 0.9em;
 		}
 	}
 }
