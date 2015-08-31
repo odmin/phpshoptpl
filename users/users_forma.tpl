@@ -1,3 +1,6 @@
+@php
+// Ўаблон формы входа в попапе
+php@
 <div id="ico_user"><span class="red usersError"><span>@usersError@</span></span>
 	<a href="javascript:void(0)" onclick="document.getElementById('light').style.display='block';document.getElementById('fade').style.display='block'">¬ход</a>
   <div style="clear:both"></div>

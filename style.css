@@ -149,8 +149,24 @@
   border-bottom: 5px solid #17899e;
   border-top: none;
 }
+.button_yellow {
+  padding: 10px 25px;
+  background: #ffd203;
+  background: -webkit-linear-gradient(#ffd203, #ffb503);
+  background: linear-gradient(#ffd203, #ffb503);
+  border: 1px solid #ffb503;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px 0px rgba(50, 50, 50, 0.75);
+  font-size: 26px;
+  font-weight: bold;
+  color: #ffffff;
+  text-shadow: 3px 3px 1px rgba(0, 0, 0, 0.7);
+}
+.button_yellow:hover {
+  background: #ffb503;
+}
 .button_green {
-  padding: 10px 15px;
+  padding: 10px 25px;
   background: #3CCF41;
   background: -webkit-linear-gradient(#3ccf41, #128810);
   background: linear-gradient(#3ccf41, #128810);
