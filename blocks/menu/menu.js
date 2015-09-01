@@ -13,7 +13,14 @@ jQuery(document).ready(function($) {
 				});
 				$(this).find('.menu-cat-child').removeClass('hide');
 			})
-	}
+	};
+	$('.menu-cat__parent').each(function () {
+		if (window.matchMedia("(max-width: 1024px)").matches) {
+			var href = '#' + $(this).parent('.menu-cat__item').attr('id');
+			var link = $(this).attr('href');
+			$(this).attr('href', href);
+		}
+	});
   });
 $('#toggle-menu_top').on('click', function () {
 	$(this).toggleClass('open');

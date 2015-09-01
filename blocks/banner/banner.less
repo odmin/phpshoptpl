@@ -22,12 +22,26 @@
 
 	&_full{
 		width: 100%;
+		max-height: 452px;
+		overflow: hidden;
 		.banner__link{
 			width: 100%;
 		}
 	}
 	&_indent_top{
 		margin-top: @indent;
+		&:first-child{
+			margin-top: 0;
+			@media @notdesktop{
+				margin-top: @indent;
+			}
+		}
+		&:last-child{
+			margin-bottom: 10px;
+			@media @notdesktop{
+				margin-bottom: 0;
+			}
+		}
 	}
 
 	&:hover{

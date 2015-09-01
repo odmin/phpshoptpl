@@ -159,7 +159,7 @@ php@
 							@leftCatal@
 						</ul>
 					</nav>
-					<aside class="general__area">
+					<aside class="general__area general__area_banner">
 						@mainTextFastComStart@
 						<div class="fast-messages">
 							@mainTextFast@
@@ -188,7 +188,7 @@ php@
 									</div>
 								</div>
 							</div>
-							<div class="grid__col1 grid__col_tablet6 grid__col_phone3">
+							<div class="grid__col1 grid__col_tablet6 grid__col_phone3" id="bx-right">
 								@rightMenu@
 							</div>
 						</div>
