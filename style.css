@@ -1848,6 +1848,9 @@ a img {
 #ico_user .white_content a {
   color: #555555;
 }
+#ico_user .red {
+  color: #ff0000;
+}
 .usb {
   background: url(images/usb.gif) top left no-repeat;
   border: 0px;
