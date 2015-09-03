@@ -1,19 +1,25 @@
-<div class="box-content-shadow">
+<div class="general__area">
+	
+	<div class="box-shop">
 
-	<div class="page_nava">
+		<div class="breadcrumbs">
+			<a href="/">Главная</a> / Карта сайта 
+		</div>
 
-	  <div> <a href="/">Главная</a> / Карта сайта </div>
+
+	<h1 class="box-shop__title">Карта сайта</h1>
+
+	<div class="pod_cart">
+
+		<p>@catalFound@: <strong>@catalNum@</strong></p>
+
+		<p>@producFound@: <strong>@productNum@</strong></p>
 
 	</div>
-
-	<h1>Карта сайта</h1>
-
-	<div class="pod_cart"> @catalFound@: <STRONG>@catalNum@</STRONG><br>
-
-	  @producFound@: <STRONG>@productNum@</STRONG><BR>
-
+	
+	<div class="usercontent">
+		@productPageDis@
 	</div>
-
-	@productPageDis@
+	</div>
 
 </div>
