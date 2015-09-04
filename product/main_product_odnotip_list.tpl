@@ -29,7 +29,23 @@ php@
 
 <aside class="general__area">
 	
-	<img src="/UserFiles/Image/Dop/kak-mi-rabotaem.jpg" alt="Как мы работаем" title="Как мы работаем" align="top" border="0px" width="100%">
+	<div class="grid grid_indent_sm">
+		<div class="grid__col1 grid__col_phone3">
+			<img src="images/shop/kak-mi-rabotaem_01.png" alt="" width="100%" height="auto">
+		</div>
+		<div class="grid__col1 grid__col_phone3">
+			<img src="images/shop/kak-mi-rabotaem_02.png" alt="" width="100%" height="auto">
+		</div>
+		<div class="grid__col1 grid__col_phone3">
+			<img src="images/shop/kak-mi-rabotaem_03.png" alt="" width="100%" height="auto">
+		</div>
+		<div class="grid__col1 grid__col_phone3">
+			<img src="images/shop/kak-mi-rabotaem_04.png" alt="" width="100%" height="auto">
+		</div>
+		<div class="grid__col1 grid__col_phone3">
+			<img src="images/shop/kak-mi-rabotaem_05.png" alt="" width="100%" height="auto">
+		</div>
+	</div>
 
 </aside>
 
@@ -40,7 +56,7 @@ php@
 </header>
 
 <aside class="general__area">
-
+	
 	<img src="/UserFiles/Image/Dop/karta.jpg" alt="Схема проезда" title="Схема проезда" align="top" border="0px" width="100%">
 
 </aside>
