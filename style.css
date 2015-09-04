@@ -2492,6 +2492,15 @@ a img {
 .usercontent_fs_medium {
   font-size: 1.2em;
 }
+.usercontent .phone-cell {
+  text-align: center;
+  font-size: 17px;
+  padding: 20px 0;
+  background: #d6d6d6;
+}
+.usercontent .phone-cell .big {
+  font-size: 150%;
+}
 
 .wrapper {
   width: 90%;
