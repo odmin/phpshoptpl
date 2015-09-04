@@ -49,7 +49,7 @@ php@
 	<span class="form__helper"> - </span>
 	<input type="text" name="tel_name" maxlength="30" value="@UserTel@" class="form__input form__input_sm" required>
 	<span class="form__comment">Пример: 8495-7895221</span>
-
+	<div class="cb"></div>
 	<label for="dos_ot" class="form__label">Время доставки:</label>
 	<span class="form__helper">от </span>
 	<input type="text" name="dos_ot" maxlength="5" class="form__input form__input_sm" id="dos_ot">
