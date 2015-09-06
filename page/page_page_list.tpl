@@ -12,7 +12,7 @@ php@
 
 		<h1 class="box-shop__title">@pageTitle@</h1>
 
-		<div class="box-shop__catalog">
+		<div class="">
 			@catContent@
 		</div>
 
