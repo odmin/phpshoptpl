@@ -222,6 +222,20 @@ php@
             </div>
         </footer>
     </div>
+    <div id="newslettersub" class="form-newsletter">
+        <span class="sub_header form-newsletter__title">Подпишись и получи 2000 рецептов в подарок!</span>
+        <form id="subscribeform" method="post" action="http://dev106.diymus.ru/lists/?p=subscribe&id=2" name="subscribeform" class="form-newsletter-form">
+            Email: <input type="text" name="email" value = "" class="form-newsletter-form__input">
+            Ваше имя: <input type="text" name="attribute1" value = "" class="form-newsletter-form__input">
+            <input type="hidden" name="subscribe" value="it's done" />
+            <input type="hidden" name="list[2]" value="signup" />
+            <input type=hidden name="makeconfirmed" value="1">
+            <input type="submit" name="subscribe" value="Подписаться!" onClick="return checkform();" class="button button_buy">
+        </form>
+        <div id="sub_close" class="form-newsletter__close">
+            <span title="Закрыть форму подписки">X Закрыть</span>
+        </div>
+    </div>
     <script language="Javascript" type="text/javascript" src="@php echo $GLOBALS['SysValue']['dir']['templates'].chr(47).$_SESSION['skin'].chr(47); php@javascript/production.js"></script>
     <script type="application/ld+json">
         {

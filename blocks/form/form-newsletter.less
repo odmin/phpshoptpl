@@ -1,0 +1,45 @@
+@import '../_framework/var';
+
+.form-newsletter{
+	font: normal 1em @font;
+	color: @color-text;
+	height: 72px;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: #ffd203 url('images/files/shadow-title.png') repeat-x;
+	z-index: 999;
+	padding: 10px;
+	text-align: center;
+	display: none;
+	
+	&__title{
+		font-size: 30px;
+	}
+	&__form{
+		margin: 0;
+		padding: 0;
+		padding-top: 10px;
+		font-size: 16px;
+	}
+	&__close{
+		margin-top: -70px;
+		margin-left: 870px;
+		font-size: 15px;
+		color: @color-black;
+		cursor: pointer;
+		&:hover{
+			color: @color-text;
+		}
+	}
+}
+
+.form-newsletter-form{
+	padding-top: 5px;
+	&__input{
+		border: 1px solid @color-text;
+		border-radius: 3px;
+		padding: 5px;
+	}
+}

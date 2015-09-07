@@ -24,7 +24,11 @@ grunt.config.init({
 
     index: {
         src: [
-        '<%= path_blocks %>**/*.js'
+        '<%= path_blocks %>**/*.js',
+        '<%= path_build_js %>lib/js.js',
+        '<%= path_build_js %>lib/jquery.cookie.js',
+        '<%= path_build_js %>lib/jquery.form.js',
+        '<%= path_build_js %>lib/subscribe.js'
         ],
 
         dest: '<%= path_build_js %>production.js'
