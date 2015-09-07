@@ -282,7 +282,7 @@ php@
 				</div>
 				<div class="copyright">
 					<p>Все материалы являются собственностью, любое использование разрешено, с согласия автора. <a class="copyright__link" href="/page/privacypolicy.html" title="Политика Конфиденциальности" target="_blank">Политика Конфиденциальности</a>, <a class="copyright__link" href="/page/dogovor-oferta.html" title="Договор-оферта" target="_blank">Договор-оферта</a></p>
-					<p><a href="/" title="Посуда из Чехии">Посуда из Чехии</a> 8(495)789-5221 <a class="copyright__link" href="mailto:sale@profserviz.ru"><img src="images/mm_mail.gif" alt="sale@profserviz.ru" width="11" height="11" border="0"></a> © Profserviz.ru, 2008-2015</p>
+					<p><a href="/" title="Посуда из Чехии">Посуда из Чехии</a> 8(495)789-5221 <a class="copyright__link" href="mailto:sale@profserviz.ru"><img src="images/mm_mail.gif" alt="sale@profserviz.ru" width="11" height="11" border="0"></a> © Profserviz.ru, 2008-<span id="js-year"></span></p>
 				</div>
 			</div>
 		</footer>

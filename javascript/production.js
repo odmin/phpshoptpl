@@ -1,4 +1,7 @@
-$(window).bind('load', function(){
+jQuery(document).ready(function($) {
+	var dt = new Date();
+	$('#js-year').html(dt.getFullYear());
+});;$(window).bind('load', function(){
 	$('.bxslider').bxSlider({
 		controls:false,
 		auto:true,
