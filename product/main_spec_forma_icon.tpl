@@ -29,7 +29,7 @@
 			<div class="price__old">
 				@productPriceRub@
 			</div>
-			<div class="price__actual">
+			<div class="price__actual" title="Цена: @productName@">
 				@productPrice@ <i class="icon icon-price"></i>
 			</div>
 		</div>

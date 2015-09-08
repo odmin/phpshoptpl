@@ -6,7 +6,7 @@
 </div>
 <div class="oneclick">
 
-    <div id="mod_oneclick_forma" class="oneclick__wrapper">
+    <div id="mod_oneclick_forma" class="white_content">
 
         <div class="oneclick__item">
 
@@ -51,10 +51,12 @@
     function formShow(){
         var form = document.getElementById('mod_oneclick_forma');
         form.style.display='block';
+        document.getElementById('fade').style.display='block';
     }
     function formHide(){
         var form = document.getElementById('mod_oneclick_forma');
         form.style.display='none';
+        document.getElementById('fade').style.display='none';
     }
     var oneclickBtn = document.getElementById('oneclick-forma-show');
     var oneclickBtnClose = document.getElementById('oneclick-forma-hide');

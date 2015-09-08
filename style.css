@@ -146,7 +146,7 @@
   padding: 7.5px 15px;
   color: #ffffff;
   background: #05677a;
-  margin: 5px;
+  margin: 5px 0;
 }
 .button_menu {
   width: 100%;
@@ -208,7 +208,7 @@
 }
 .button_big {
   padding: 10px 0;
-  width: 90%;
+  width: 100%;
   box-sizing: border-box;
   text-align: center;
 }
@@ -303,7 +303,7 @@
 
 .catalog-link {
   display: block;
-  width: 80%;
+  width: 90%;
   margin: 10px auto;
   border: 1px dashed #555555;
   color: #555555;
@@ -943,6 +943,8 @@
   background-position: center -214px;
   width: 16px;
   height: 21px;
+  position: relative;
+  top: 2px;
 }
 
 .logo {
@@ -1491,7 +1493,7 @@ a img {
   color: #000;
   background: #ffd203;
   border-radius: 5px;
-  font-size: 23px;
+  font-size: 22px;
 }
 .price__old {
   position: relative;
@@ -1662,7 +1664,7 @@ a img {
   width: 100%;
   margin: 15px 0;
   display: inline-block;
-  min-height: 75px;
+  min-height: 90px;
   color: #000;
   line-height: 1.5;
   text-align: justify;
@@ -2554,7 +2556,7 @@ a img {
 }
 
 .wrapper {
-  width: 90%;
+  width: 85%;
   max-width: 1600px;
   margin: 0 auto;
   background: #ffffff;
