@@ -30,20 +30,20 @@ php@
 <aside class="general__area">
 	
 	<div class="grid grid_indent_sm">
-		<div class="grid__col1 grid__col_phone3">
-			<img src="images/shop/kak-mi-rabotaem_01.png" alt="" width="100%" height="auto">
+		<div class="grid__col1 grid__col_phone3" align="center">
+			<img src="images/shop/kak-mi-rabotaem_01.jpg" alt="Как мы работаем" class="adaptive-image" width="auto" height="auto">
 		</div>
-		<div class="grid__col1 grid__col_phone3">
-			<img src="images/shop/kak-mi-rabotaem_02.png" alt="" width="100%" height="auto">
+		<div class="grid__col1 grid__col_phone3" align="center">
+			<img src="images/shop/kak-mi-rabotaem_02.jpg" alt="Как мы работаем" class="adaptive-image" width="auto" height="auto">
 		</div>
-		<div class="grid__col1 grid__col_phone3">
-			<img src="images/shop/kak-mi-rabotaem_03.png" alt="" width="100%" height="auto">
+		<div class="grid__col1 grid__col_phone3" align="center">
+			<img src="images/shop/kak-mi-rabotaem_03.jpg" alt="Как мы работаем" class="adaptive-image" width="auto" height="auto">
 		</div>
-		<div class="grid__col1 grid__col_phone3">
-			<img src="images/shop/kak-mi-rabotaem_04.png" alt="" width="100%" height="auto">
+		<div class="grid__col1 grid__col_phone3" align="center">
+			<img src="images/shop/kak-mi-rabotaem_04.jpg" alt="Как мы работаем" class="adaptive-image" width="auto" height="auto">
 		</div>
-		<div class="grid__col1 grid__col_phone3">
-			<img src="images/shop/kak-mi-rabotaem_05.png" alt="" width="100%" height="auto">
+		<div class="grid__col1 grid__col_phone3" align="center">
+			<img src="images/shop/kak-mi-rabotaem_05.jpg" alt="Как мы работаем" class="adaptive-image" width="auto" height="auto">
 		</div>
 	</div>
 
