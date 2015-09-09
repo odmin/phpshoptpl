@@ -42,7 +42,7 @@ php@
 
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <link href="@pageCss@?v1" type="text/css" rel="stylesheet">
+    <link href="@pageCss@?v2" type="text/css" rel="stylesheet">
     <!--[if IE 7]>
     <LINK href="phpshop/templates/profserviz/ie7-style.css" type="text/css" rel="stylesheet">
      <![endif]-->
@@ -236,7 +236,7 @@ php@
             <span title="Закрыть форму подписки">X Закрыть</span>
         </div>
     </div>
-    <script language="Javascript" type="text/javascript" src="@php echo $GLOBALS['SysValue']['dir']['templates'].chr(47).$_SESSION['skin'].chr(47); php@javascript/production.js"></script>
+    <script language="Javascript" type="text/javascript" src="@php echo $GLOBALS['SysValue']['dir']['templates'].chr(47).$_SESSION['skin'].chr(47); php@javascript/production.js?v2"></script>
     <script type="application/ld+json">
         {
             "@context" : "http://schema.org",

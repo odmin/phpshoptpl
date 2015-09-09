@@ -175,7 +175,7 @@ function CID_Product_hook($obj,$row,$rout) {
 			<ul class="pagination">
 				<li class="pagination__item prev"><a class="pagination__link" href="./'
 				.'CID_'.$GLOBALS['SysValue']['nav']['id'].''.($prev).'_'.$free_url.'.html'.$q_str.'">Назад</a></li>'
-				.$dis.'<li class="pagination__item next"><span>Вперед</span></li><li class="pagination__item next '
+				.$dis.'<li class="pagination__item next"><span class="pagination__nolink">Вперед</span></li><li class="pagination__item next '
 				.$btn_all.'"><a class="pagination__link" href="./'.'CID_'.$GLOBALS['SysValue']['nav']['id'].'_ALL_'.$free_url.'.html'.$q_str.'">Показать все</a></li>
 			</ul>
 			';			
@@ -192,7 +192,7 @@ function CID_Product_hook($obj,$row,$rout) {
 			}else{
 			$disp = '
 			<ul class="pagination">
-				<li class="pagination__item prev"><a class="pagination__link" href="./'.'CID_'.$GLOBALS['SysValue']['nav']['id'].''.($prev).'_'.$free_url.'.html'.$q_str.'">Назад</a></li>'.$dis.'<li class="next"><a href="./'.'CID_'.$GLOBALS['SysValue']['nav']['id'].''.($next).'_'.$free_url.'.html'.$q_str.'">Вперед</a></li><li class="next '.$btn_all.'"><a href="./'.'CID_'.$GLOBALS['SysValue']['nav']['id'].'_ALL_'.$free_url.'.html'.$q_str.'">Показать все</a></li>
+				<li class="pagination__item prev"><a class="pagination__link" href="./'.'CID_'.$GLOBALS['SysValue']['nav']['id'].''.($prev).'_'.$free_url.'.html'.$q_str.'">Назад</a></li>'.$dis.'<li class="pagination__item next"><a href="./'.'CID_'.$GLOBALS['SysValue']['nav']['id'].''.($next).'_'.$free_url.'.html'.$q_str.'" class="pagination__link">Вперед</a></li><li class="pagination__item next '.$btn_all.'"><a href="./'.'CID_'.$GLOBALS['SysValue']['nav']['id'].'_ALL_'.$free_url.'.html'.$q_str.'" class="pagination__link">Показать все</a></li>
 			</ul>
 			';	
 			}
@@ -200,7 +200,7 @@ function CID_Product_hook($obj,$row,$rout) {
 			if($p=='ALL'){
 			$disp = '
 			<ul class="pagination">
-				<li class="pagination__item prev"><a class="pagination__link" href="./'.'CID_'.$GLOBALS['SysValue']['nav']['id'].''.($prev).'_'.$free_url.'.html'.$q_str.'">Назад</a></li>'.$dis.'<li class="next"><a href="./'.'CID_'.$GLOBALS['SysValue']['nav']['id'].''.($next).'_'.$free_url.'.html'.$q_str.'">Вперед</a></li><li class="next '.$btn_all.'"><span>Показать все</span></li>
+				<li class="pagination__item prev"><a class="pagination__link" href="./'.'CID_'.$GLOBALS['SysValue']['nav']['id'].''.($prev).'_'.$free_url.'.html'.$q_str.'">Назад</a></li>'.$dis.'<li class="pagination__item next"><a href="./'.'CID_'.$GLOBALS['SysValue']['nav']['id'].''.($next).'_'.$free_url.'.html'.$q_str.'" class="pagination__link">Вперед</a></li><li class="pagination__item next '.$btn_all.'"><span class="pagination__nolink">Показать все</span></li>
 			</ul>
 			';				
 			}
