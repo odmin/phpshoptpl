@@ -477,7 +477,7 @@
 }
 @media only screen and (max-width: 767px) {
   .form-newsletter {
-    height: 180px;
+    height: 190px;
   }
 }
 .form-newsletter__title {
@@ -505,6 +505,8 @@
   font-size: 15px;
   color: #000000;
   cursor: pointer;
+  position: relative;
+  z-index: 999999;
 }
 .form-newsletter__close:hover {
   color: #555555;
@@ -1999,6 +2001,18 @@ a img {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 100%;
+}
+@media only screen and (max-width: 767px) {
+  .profile_flex {
+    display: block;
+    width: 100%;
+  }
+}
+.no-flexbox .profile_flex,
+.no-flexboxlegacy .profile_flex {
+  display: block;
+  width: 100%;
 }
 
 .white_content {

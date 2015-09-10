@@ -232,11 +232,12 @@ php@
             <input type=hidden name="makeconfirmed" value="1">
             <input type="submit" name="subscribe" value="Подписаться!" onClick="return checkform();" class="button button_buy form-newsletter__submit">
         </form>
-        <div id="sub_close" class="form-newsletter__close">
-            <span title="Закрыть форму подписки">X Закрыть</span>
+        <div id="sub_close" class="form-newsletter__close" title="Закрыть форму подписки"onclick="$('#newslettersub').css('display', 'none');">
+            X Закрыть
         </div>
     </div>
     <script language="Javascript" type="text/javascript" src="@php echo $GLOBALS['SysValue']['dir']['templates'].chr(47).$_SESSION['skin'].chr(47); php@javascript/production.js?v2"></script>
+    <script language="Javascript" type="text/javascript" src="@php echo $GLOBALS['SysValue']['dir']['templates'].chr(47).$_SESSION['skin'].chr(47); php@javascript/modernizr.custom.82695.js" async></script>
     <script type="application/ld+json">
         {
             "@context" : "http://schema.org",

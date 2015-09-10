@@ -4,5 +4,17 @@
 	&_flex{
 		display: flex;
 		align-items: center;
+		width: 100%;
+		@media @atphone{
+			display: block;
+			width: 100%;
+		}
+	}
+}
+.no-flexbox,
+.no-flexboxlegacy{
+	.profile_flex{
+		display: block;
+		width: 100%;
 	}
 }

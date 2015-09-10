@@ -28,7 +28,7 @@ jQuery(document).ready(function($) {
 	  addFieldToCheck("name","Name");
 	  $('#newslettersub').delay(3000).fadeIn(800);
   }
-  $('#sub_close').click(function (event) {
+  $('#sub_close').on('click', function (event) {
 	 event.preventDefault();
 	 $('#newslettersub').fadeOut(800);
 	 $.cookie('disablesub', 'true', { expires: 5 });
