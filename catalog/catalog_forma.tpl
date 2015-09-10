@@ -1,5 +1,5 @@
 <li class="menu-cat__item" id="divCat@catalogId@">
-	<a href="/shop/CID_@catalogId@.html" title="" id="titCat@catalogId@" class="menu-cat__parent">
+	<a href="/shop/CID_@catalogId@.html" title="" class="menu-cat__parent">
 		@catalogName@
 	</a>
 	<ul class="menu-cat-child hide">

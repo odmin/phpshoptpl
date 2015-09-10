@@ -9,13 +9,24 @@
 	left: 0;
 	right: 0;
 	background: #ffd203 url('images/files/shadow-title.png') repeat-x;
-	z-index: 999;
+	z-index: 99999;
 	padding: 10px;
 	text-align: center;
 	display: none;
-	
+	@media @notdesktop{
+		height: 120px;
+	}
+	@media @atphone{
+		height: 180px;
+	}
 	&__title{
 		font-size: 30px;
+		@media @notdesktop{
+			margin-bottom: 1.5em;
+		}
+		@media @atphone{
+			font-size: 1.2em;
+		}
 	}
 	&__form{
 		margin: 0;
@@ -32,14 +43,36 @@
 		&:hover{
 			color: @color-text;
 		}
+		@media @notdesktop{
+			position: relative;
+			text-align: right;
+			margin: 0;
+			right: 15px;
+			bottom: 25px;
+		}
+	}
+	&__submit{
+		@media @notdesktop{
+			margin-top: 1.5em;
+		}
 	}
 }
 
 .form-newsletter-form{
 	padding-top: 5px;
+	@media @notdesktop{
+		width: 75%;
+		margin: 0 12.5%;
+		@media @atphone{
+			text-align: right;
+		}
+	}
 	&__input{
 		border: 1px solid @color-text;
 		border-radius: 3px;
 		padding: 5px;
+		@media @atphone{
+			margin: 0.5em 0;
+		}
 	}
 }

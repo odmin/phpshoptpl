@@ -295,7 +295,7 @@ php@
 			<input type="hidden" name="subscribe" value="it's done" />
 			<input type="hidden" name="list[2]" value="signup" />
 			<input type=hidden name="makeconfirmed" value="1">
-			<input type="submit" name="subscribe" value="Подписаться!" onClick="return checkform();" class="button button_buy">
+			<input type="submit" name="subscribe" value="Подписаться!" onClick="return checkform();" class="button button_buy form-newsletter__submit">
 		</form>
 		<div id="sub_close" class="form-newsletter__close">
 			<span title="Закрыть форму подписки">X Закрыть</span>
