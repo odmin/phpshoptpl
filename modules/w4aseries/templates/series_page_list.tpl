@@ -16,8 +16,21 @@
 					</tr>
 				</table>
 			</div>
-			<div class="divSortPageList fr">Сортировать по:&nbsp;&nbsp;&nbsp;&nbsp; Наименованию ( <span class="spanSortPageList"><a href="./@productPageThis@.html?fs=2&amp;ss=1@productVendor@">возр</a> / <a href="./@productPageThis@.html?fs=1&amp;ss=1@productVendor@">убыв</a></span> )&nbsp;&nbsp;&nbsp;&nbsp; Цене ( <span class="spanSortPageList"><a href="./@productPageThis@.html?fs=2&amp;ss=2@productVendor@">возр</a> / <a href="./@productPageThis@.html?fs=1&amp;ss=2@productVendor@">убыв</a></span> )</div>
+			<div class="divSortPageList fr shop-sort shop-sort_order">
+				Сортировать по:&nbsp;&nbsp;&nbsp;&nbsp; 
+				Наименованию ( 
+				<span class="spanSortPageList">
+					<a class="shop-sort__link" href="./@productPageThis@.html?fs=2&amp;ss=1@productVendor@">возр</a> / 
+					<a class="shop-sort__link" href="./@productPageThis@.html?fs=1&amp;ss=1@productVendor@">убыв</a>
+				</span> )&nbsp;&nbsp;&nbsp;&nbsp; 
+				Цене ( 
+				<span class="spanSortPageList">
+					<a class="shop-sort__link" href="./@productPageThis@.html?fs=2&amp;ss=2@productVendor@">возр</a> / 
+					<a class="shop-sort__link" href="./@productPageThis@.html?fs=1&amp;ss=2@productVendor@">убыв</a>
+				</span> )
+			</div>
 		</form>
+		<div class="cb"></div>
 		<div class="box-shop__catalog">
 			<table cellpadding="0" cellspacing="0" border="0" width="100%">
 				@productPageDis@
