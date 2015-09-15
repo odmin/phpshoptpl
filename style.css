@@ -1317,6 +1317,7 @@
   bottom: 130px;
   left: 15px;
   z-index: 3000000;
+  background: #eee;
   background: -webkit-linear-gradient(top, #fbfbfb 0%, #d8d8d8 100%);
   background: linear-gradient(to bottom, #fbfbfb 0%, #d8d8d8 100%);
   border-radius: 6px;
@@ -1328,10 +1329,13 @@
   }
 }
 .navigation-topbtn__link {
-  display: inline-block;
+  display: block;
   width: 36px;
   height: 36px;
   background: url(images/files/back-up-arrow.png) no-repeat center;
+}
+.lteie8 .navigation-topbtn {
+  height: 36px;
 }
 
 .navigation {

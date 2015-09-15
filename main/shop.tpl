@@ -46,7 +46,9 @@ php@
     <!--[if IE 7]>
     <LINK href="phpshop/templates/profserviz/ie7-style.css" type="text/css" rel="stylesheet">
      <![endif]-->
-    <!--[if IE]><LINK href="@php echo $GLOBALS['SysValue']['dir']['templates'].chr(47).$_SESSION['skin'].chr(47); php@/style.ie.css" type="text/css" rel="stylesheet"><![endif]-->
+     <!--[if lte IE 8]>
+        <script language="Javascript" type="text/javascript" src="@php echo $GLOBALS['SysValue']['dir']['templates'].chr(47).$_SESSION['skin'].chr(47); php@javascript/html5.js"></script>
+    <LINK href="@php echo $GLOBALS['SysValue']['dir']['templates'].chr(47).$_SESSION['skin'].chr(47); php@/style.ie.css" type="text/css" rel="stylesheet"><![endif]-->
     <script language="Javascript" type="text/javascript" src="java/phpshop.js"></script>
     <script language="Javascript" type="text/javascript" src="java/tabpane.js"></script>
     <script language="Javascript" type="text/javascript" src="@php echo $GLOBALS['SysValue']['dir']['templates'].chr(47).$_SESSION['skin'].chr(47); php@javascript/js.js"></script>

@@ -2,6 +2,17 @@
 	line-height:18px;
 	padding:5px 20px 5px 0;
 }
-#back-top {
-	background:rgb(148,214,226) url(images/files/back-up-ie.jpg) no-repeat center;
+.lteie8 .menu-cat #divCat76 .menu-cat-child, 
+.lteie8 .menu-cat #divCat81 .menu-cat-child, 
+.lteie8 .menu-cat #divCat82 .menu-cat-child, 
+.lteie8 .menu-cat #divCat83 .menu-cat-child {
+	left: auto;
+	right: 0;
+}
+.banner:hover,
+.catalog-link:hover{
+	border: 1px solid #000;
+}
+.ie-main .usercontent{
+	padding: 15px;
 }

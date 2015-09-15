@@ -72,7 +72,7 @@ php@
 	<script src="Scripts/AC_RunActiveContent.js" type="text/javascript"></script>
 </head>
 
-<body onLoad="default_load('false','false');NavActive('index');LoadPath('@ShopDir@');" class="bod">
+<body onLoad="default_load('false','false');NavActive('index');LoadPath('@ShopDir@');" class="bod ie-main">
 	<div class="black_overlay" id="fade"></div>
 	<div id="back-top" class="navigation-topbtn"><a class="navigation-topbtn__link" href="#top"><span></span></a></div>
 	<div class="page">
